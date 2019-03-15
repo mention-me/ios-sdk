@@ -1,0 +1,22 @@
+{
+  "name": "MentionmeSwift",
+  "version": "0.1.0",
+  "summary": "A short description of MentionmeSwift.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/andreasbagias/MentionmeSwift",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "andreasbagias": "andreasbagias@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/andreasbagias/MentionmeSwift.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MentionmeSwift/Classes/**/*"
+}
