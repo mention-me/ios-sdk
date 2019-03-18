@@ -17,10 +17,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        let config = MentionmeConfig(demo: true)
+        // Get the partner code value from the application's settings (if available)
+        let partnerCode = UserDefaults.standard.string(forKey: "partnerCode") ?? "set partnerCode in settings"
+        
+        // Whether to use demo (default) or live endpoints
+        let useLive = UserDefaults.standard.bool(forKey: "useLive")
+
+        let config = MentionmeConfig(demo: !useLive)
         config.debugNetwork = true
         Mentionme.shared.config = config
-        let params = MentionmeRequestParameters(partnerCode: "PARTNER_CODE")
+        let params = MentionmeRequestParameters(partnerCode: partnerCode) // Matt's Board Games
+        
         if let appName = Bundle.main.infoDictionary!["CFBundleName"] as? String{
             params.appName = appName
         }
