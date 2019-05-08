@@ -60,9 +60,9 @@ The offers and customer experience at each touchpoint can be disabled at any tim
  
  - Track successful orders or sign ups of new customers who may have been referred 
 
- - [Optionally] Allow "name sharing" to occur in the app for new customers who come to the app having been referred by word of mouth.
+ - Allow "name sharing" to occur in the app for new customers who come to the app having been referred by word of mouth.
 
- - [Optionally] Show existing customers who are referrers a dashboard so they can track their shares and rewards
+ - Show existing customers who are referrers a dashboard so they can track their shares and rewards
 
 ### 1. Enrol Referrer
 Tell us a customer's details to enrol them as a referrer and receive a referral offer for them to share, including individual share methods and unique share tracking URLs to include in any native shares.
