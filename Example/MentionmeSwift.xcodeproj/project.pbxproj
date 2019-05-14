@@ -13,7 +13,6 @@
 		280CFBE0223168D800754BD1 /* FindReferrerResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280CFBDF223168D800754BD1 /* FindReferrerResultsViewController.swift */; };
 		280CFBE22231751700754BD1 /* LinkCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280CFBE12231751700754BD1 /* LinkCustomerViewController.swift */; };
 		280CFBE42232771200754BD1 /* ReferrerNotFoundOrMultipleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280CFBE32232771200754BD1 /* ReferrerNotFoundOrMultipleViewController.swift */; };
-		2892DBF4222FDFF600B726B2 /* LocalConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2892DBF3222FDFF600B726B2 /* LocalConfig.swift */; };
 		28DD2FE5223953AB0093FD16 /* CustomValidationWarning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DD2FE4223953AB0093FD16 /* CustomValidationWarning.swift */; };
 		5BE846E0EF858759B6349652 /* Pods_MentionmeSwift_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61669377F3083409F7FD8735 /* Pods_MentionmeSwift_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
@@ -22,6 +21,8 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		68B2CF97B20CE96809EA9100 /* Pods_MentionmeSwift_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F760BA973919B5DFCFEC5E /* Pods_MentionmeSwift_Example.framework */; };
+		C9917140223FD78D004FD5A1 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C991713F223FD78D004FD5A1 /* Settings.bundle */; };
+		C9917143223FE1C2004FD5A1 /* SettingsBundleHelper.swift in Resources */ = {isa = PBXBuildFile; fileRef = C9917142223FE1C2004FD5A1 /* SettingsBundleHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +43,6 @@
 		280CFBDF223168D800754BD1 /* FindReferrerResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindReferrerResultsViewController.swift; sourceTree = "<group>"; };
 		280CFBE12231751700754BD1 /* LinkCustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkCustomerViewController.swift; sourceTree = "<group>"; };
 		280CFBE32232771200754BD1 /* ReferrerNotFoundOrMultipleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferrerNotFoundOrMultipleViewController.swift; sourceTree = "<group>"; };
-		2892DBF3222FDFF600B726B2 /* LocalConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalConfig.swift; sourceTree = "<group>"; };
 		28DD2FE4223953AB0093FD16 /* CustomValidationWarning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomValidationWarning.swift; sourceTree = "<group>"; };
 		2E4DFAEA03E966BB6CA5F798 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		4118B0E6763F1BE9CE3B229A /* Pods-MentionmeSwift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MentionmeSwift_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MentionmeSwift_Example/Pods-MentionmeSwift_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -60,6 +60,8 @@
 		67F760BA973919B5DFCFEC5E /* Pods_MentionmeSwift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MentionmeSwift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DA6D3E9C1F8E019F690BCBD /* MentionmeSwift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MentionmeSwift.podspec; path = ../MentionmeSwift.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		ADA11DC739AC64DA927CA61D /* Pods-MentionmeSwift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MentionmeSwift_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-MentionmeSwift_Example/Pods-MentionmeSwift_Example.release.xcconfig"; sourceTree = "<group>"; };
+		C991713F223FD78D004FD5A1 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		C9917142223FE1C2004FD5A1 /* SettingsBundleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsBundleHelper.swift; sourceTree = "<group>"; };
 		E19FC2D88B486FAF7D3B0B45 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,13 +142,14 @@
 		607FACD21AFB9204008FA782 /* Example for MentionmeSwift */ = {
 			isa = PBXGroup;
 			children = (
+				C9917141223FE19E004FD5A1 /* Helpers */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				2892DBF3222FDFF600B726B2 /* LocalConfig.swift */,
 				28DD2FE4223953AB0093FD16 /* CustomValidationWarning.swift */,
 				2892DBFB222FE2B300B726B2 /* Controllers */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				C991713F223FD78D004FD5A1 /* Settings.bundle */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for MentionmeSwift";
@@ -186,6 +189,14 @@
 				E19FC2D88B486FAF7D3B0B45 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		C9917141223FE19E004FD5A1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C9917142223FE1C2004FD5A1 /* SettingsBundleHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,15 +247,17 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = W4Q774P562;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = W4Q774P562;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -274,6 +287,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9917140223FD78D004FD5A1 /* Settings.bundle in Resources */,
+				C9917143223FE1C2004FD5A1 /* SettingsBundleHelper.swift in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
@@ -296,7 +311,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MentionmeSwift_Example/Pods-MentionmeSwift_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-MentionmeSwift_Example/Pods-MentionmeSwift_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/MentionmeSwift/MentionmeSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -305,7 +320,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MentionmeSwift_Example/Pods-MentionmeSwift_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MentionmeSwift_Example/Pods-MentionmeSwift_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6B7C5D61EA1106E621D4B55F /* [CP] Check Pods Manifest.lock */ = {
@@ -354,7 +369,6 @@
 				280CFBDC2231482700754BD1 /* EnrolReferrerResultsViewController.swift in Sources */,
 				280CFBE42232771200754BD1 /* ReferrerNotFoundOrMultipleViewController.swift in Sources */,
 				280CFBDA2231352400754BD1 /* EnrolReferrerViewController.swift in Sources */,
-				2892DBF4222FDFF600B726B2 /* LocalConfig.swift in Sources */,
 				280CFBDE22315F9F00754BD1 /* FindReferrerViewController.swift in Sources */,
 				280CFBE0223168D800754BD1 /* FindReferrerResultsViewController.swift in Sources */,
 				28DD2FE5223953AB0093FD16 /* CustomValidationWarning.swift in Sources */,
@@ -413,12 +427,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -426,7 +442,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -466,12 +482,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -505,6 +523,7 @@
 			baseConfigurationReference = 4118B0E6763F1BE9CE3B229A /* Pods-MentionmeSwift_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W4Q774P562;
 				INFOPLIST_FILE = MentionmeSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -520,6 +539,7 @@
 			baseConfigurationReference = ADA11DC739AC64DA927CA61D /* Pods-MentionmeSwift_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W4Q774P562;
 				INFOPLIST_FILE = MentionmeSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -534,6 +554,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 15C7A527A2F46BF581A3C6A3 /* Pods-MentionmeSwift_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = W4Q774P562;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -556,6 +577,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4EB03DF8AF2AF3621C0CDB14 /* Pods-MentionmeSwift_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = W4Q774P562;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

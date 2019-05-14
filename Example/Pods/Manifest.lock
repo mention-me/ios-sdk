@@ -1,5 +1,5 @@
 PODS:
-  - MentionmeSwift (0.1.0)
+  - MentionmeSwift (1.0)
 
 DEPENDENCIES:
   - MentionmeSwift (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MentionmeSwift: 913e73debd1aa239ae28adf5d70450071c2e9f83
+  MentionmeSwift: 935ac5a49dcc1e193f9e70525fa23ff936d2e3f6
 
 PODFILE CHECKSUM: f1d5e5ed3738dd6bbf154c01b93acb9bc47fe206
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.6.1
