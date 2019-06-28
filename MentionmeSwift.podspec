@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MentionmeSwift'
-  s.version          = '1.0'
+  s.version          = '1.1'
   s.summary          = 'Supercharge your customer growth with referral marketing through Mention Me'
 
 # This description is used to generate tags and improve search results.
