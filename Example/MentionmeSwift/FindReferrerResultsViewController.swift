@@ -52,7 +52,7 @@ class FindReferrerResultsViewController: UIViewController {
         let referrerParameters = MentionmeReferrerParameters(referrerMentionMeIdentifier: identifier, referrerToken: token)
         //Create the Customer Parameters
         let customerParameters = MentionmeCustomerParameters(emailAddress: email, firstname: "", surname: "")
-        //Create the Referee Regsiter Request
+        //Create the Referee Register Request
         let request = MentionmeRefereeRegisterRequest(mentionmeReferrerParameters: referrerParameters, mentionmeCustomerParameters: customerParameters)
         
         //Calling the API 5. Link new customer to referrer

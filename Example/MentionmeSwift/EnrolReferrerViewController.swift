@@ -18,9 +18,9 @@ class EnrolReferrerViewController: UIViewController {
     @IBOutlet weak var warningView: UIView!
     @IBOutlet weak var messageLabel: UILabel!
     
-    var firstname = "John"
-    var surname = "Michael"
-    var email = "johnmichael4@example.com"
+    var firstname = "Logan"
+    var surname = "Smith"
+    var email = "logansmith813@mention-me.com"
     var privacyTermsString = ""
     var offer: MentionmeOffer?
     var shareLinks: [MentionmeShareLink]?

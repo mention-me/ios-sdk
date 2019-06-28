@@ -32,6 +32,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Mentionme.shared.requestParameters = params
         Mentionme.shared.validationWarning = CustomValidationWarning()
         
+        //this disables the debug printing of unsatisfied constraints
+        UserDefaults.standard.setValue(false, forKey: "_UIConstraintBasedLayoutLogUnsatisfiable")
+        
         return true
     }
 

@@ -29,7 +29,7 @@ public class MentionmeDashboardReward {
     /**
      * Description of who they referred to get the reward
      */
-    public var forReferring: String = ""
+    public var forReferring: [String] = [String]()
     
     init(withDictionary dict: NSDictionary) {
         
@@ -45,7 +45,7 @@ public class MentionmeDashboardReward {
         if let status = dict["status"] as? String{
             self.status = status
         }
-        if let forReferring = dict["forReferring"] as? String{
+        if let forReferring = dict["forReferring"] as? [String]{
             self.forReferring = forReferring
         }
         

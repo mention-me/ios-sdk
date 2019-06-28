@@ -100,6 +100,9 @@ class MentionmeParser: NSObject{
                                                  _ dashboardRewards: [MentionmeDashboardReward]?) -> Void,
                              failure: @escaping (_ message: String) -> Void){
         
+        let dataString =  String(data: data, encoding: String.Encoding.utf8)
+        print("no data",dataString ?? "no data")
+        
         do {
             if let json = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments) as? NSDictionary{
                 
@@ -112,7 +115,7 @@ class MentionmeParser: NSObject{
                 var termsLinks: MentionmeTermsLinks?
                 var referralStats: MentionmeReferralStats?
                 var dashboardRewards: [MentionmeDashboardReward]?
-                
+
                 if let offerDict = json["offer"] as? NSDictionary{
                     offer = MentionmeOffer(withDictionary: offerDict)
                 }
@@ -134,10 +137,15 @@ class MentionmeParser: NSObject{
                         dashboardRewards?.append(MentionmeDashboardReward(withDictionary: refRewardDict))
                     }
                 }
-                
+
                 success(offer,links,termsLinks,referralStats,dashboardRewards)
             }
         } catch let error{
+            
+            if Mentionme.shared.config?.debugNetwork ?? false{
+                print("Problem parsing json response")
+            }
+            
             failure(error.localizedDescription)
         }
     }

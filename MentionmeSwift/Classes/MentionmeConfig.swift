@@ -10,11 +10,16 @@ import Foundation
 
 public class MentionmeConfig{
     
-    public var demo: Bool
+    public var demo: Bool = false
+    public var uat: Bool = false
     public var debugNetwork: Bool = false
     
     public init(demo: Bool){
         self.demo = demo
+    }
+    
+    public init(uat: Bool){
+        self.uat = uat
     }
     
 }

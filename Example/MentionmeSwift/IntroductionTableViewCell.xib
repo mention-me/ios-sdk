@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="introductionCell" rowHeight="130" id="KGk-i7-Jjw" customClass="IntroductionTableViewCell" customModule="MentionmeSwift_Example" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="131"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="130.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" • Introduce Company name to your friends." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vI6-Dy-D0y">
+                        <rect key="frame" x="16" y="40" width="343" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text=" • Give your friends 20% off when they place their first order with Company name." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aR9-A6-tsx">
+                        <rect key="frame" x="16" y="56" width="343" height="31.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How it works" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWt-sS-pZl">
+                        <rect key="frame" x="16" y="11" width="343" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" • And to say thanks we'll give you 20% off your next order for each friend who purchases for the first time." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ou5-SV-eK6">
+                        <rect key="frame" x="16" y="87.5" width="343" height="31.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="vI6-Dy-D0y" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="2KE-OF-Rzz"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ou5-SV-eK6" secondAttribute="bottom" constant="1" id="8uD-w6-CBw"/>
+                    <constraint firstItem="NWt-sS-pZl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="CAm-MW-da4"/>
+                    <constraint firstItem="ou5-SV-eK6" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="FON-L1-Mwd"/>
+                    <constraint firstItem="aR9-A6-tsx" firstAttribute="top" secondItem="vI6-Dy-D0y" secondAttribute="bottom" id="Ijg-Ic-bfl"/>
+                    <constraint firstItem="NWt-sS-pZl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="JbU-bH-xlr"/>
+                    <constraint firstItem="ou5-SV-eK6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Nhx-AG-lVS"/>
+                    <constraint firstItem="ou5-SV-eK6" firstAttribute="top" secondItem="aR9-A6-tsx" secondAttribute="bottom" id="O2E-aK-9Da"/>
+                    <constraint firstItem="aR9-A6-tsx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="SWt-Yw-LO8"/>
+                    <constraint firstItem="NWt-sS-pZl" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="U5j-JY-M6D"/>
+                    <constraint firstItem="vI6-Dy-D0y" firstAttribute="top" secondItem="NWt-sS-pZl" secondAttribute="bottom" constant="8" id="Zr4-eV-I4i"/>
+                    <constraint firstItem="vI6-Dy-D0y" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="jpK-hD-JRK"/>
+                    <constraint firstItem="aR9-A6-tsx" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="t8e-BE-oDv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="line1Label" destination="vI6-Dy-D0y" id="Jgx-b4-Cj9"/>
+                <outlet property="line2Label" destination="aR9-A6-tsx" id="iWe-dB-TBa"/>
+                <outlet property="line3Label" destination="ou5-SV-eK6" id="7h5-GC-MMP"/>
+            </connections>
+            <point key="canvasLocation" x="176.80000000000001" y="193.4032983508246"/>
+        </tableViewCell>
+    </objects>
+</document>

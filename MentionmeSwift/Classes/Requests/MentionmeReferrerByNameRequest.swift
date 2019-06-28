@@ -31,14 +31,12 @@ public class MentionmeReferrerByNameRequest: MentionmeRequest{
         
         if let mentionmeReferrerNameParameters = mentionmeReferrerNameParameters{
             
-            
             params["name"] = mentionmeReferrerNameParameters.name
             if let email = mentionmeReferrerNameParameters.email{
                 params["email"] = email
             }
             
         }
-        
         
         queryParameters = params
         
