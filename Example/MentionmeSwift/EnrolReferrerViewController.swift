@@ -29,19 +29,13 @@ class EnrolReferrerViewController: UIViewController {
         super.viewDidLoad()
 
         firstname = [
-            "John",
-            "Matthew",
-            "Tim",
-            "Edward",
-            "Gabriel"
+            "Noah", "Liam", "Mason", "Jacob", "William", "Ethan", "James", "Alexander", "Michael", "Benjamin",
+            "Emma", "Olivia", "Sophia", "Ava", "Isabella", "Mia", "Abigail", "Emily", "Charlotte", "Harper"
             ].randomElement()!
         
         surname = [
-            "John",
-            "Matthew",
-            "Tim",
-            "Edward",
-            "Gabriel"
+            "Smith", "Jones", "Taylor", "Brown", "Williams", "Wilson", "Johnson", "Davies", "Robinson", "Wright",
+            "Thompson", "Evans", "Walker", "White", "Roberts", "Green", "Hall", "Wood", "Jackson", "Clarke"
             ].randomElement()!
         
         email = firstname + surname + String(Int.random(in: 10 ... 99)) + "@example.com"
