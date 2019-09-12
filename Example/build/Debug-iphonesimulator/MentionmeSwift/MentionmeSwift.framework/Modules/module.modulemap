@@ -1,0 +1,11 @@
+framework module MentionmeSwift {
+  umbrella header "MentionmeSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module MentionmeSwift.Swift {
+    header "MentionmeSwift-Swift.h"
+    requires objc
+}

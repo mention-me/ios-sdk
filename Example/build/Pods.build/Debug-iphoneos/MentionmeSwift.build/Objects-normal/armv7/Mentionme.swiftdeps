@@ -1,0 +1,320 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Mentionme"
+provides-nominal:
+- "14MentionmeSwift0A0C"
+provides-member:
+- ["14MentionmeSwift0A0C", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "<"
+- !private ">"
+- "AssignmentPrecedence"
+- "Bool"
+- "CastingPrecedence"
+- "Data"
+- !private "DispatchQueue"
+- "Error"
+- !private "FloatLiteralType"
+- !private "HTTPURLResponse"
+- !private "IntegerLiteralType"
+- "Mentionme"
+- "MentionmeConfig"
+- "MentionmeContentCollectionLink"
+- "MentionmeCustomerRequest"
+- "MentionmeError"
+- "MentionmeOffer"
+- "MentionmeOrderRequest"
+- !private "MentionmeParser"
+- "MentionmeRefereeRegisterRequest"
+- "MentionmeRefereeReward"
+- "MentionmeReferrer"
+- "MentionmeReferrerByNameRequest"
+- "MentionmeReferrerEnrollmentRequest"
+- "MentionmeRequestParameters"
+- "MentionmeShareLink"
+- "MentionmeTermsLinks"
+- "MentionmeValidationWarning"
+- !private "NSError"
+- "NSMutableURLRequest"
+- "String"
+- !private "StringLiteralType"
+- !private "URLRequest"
+- "URLResponse"
+- !private "URLSession"
+- "URLSessionDataTask"
+- "Void"
+- !private "||"
+depends-member:
+- !private ["s7CVarArgP", "async"]
+- !private ["s7CVarArgP", "cancel"]
+- !private ["s7CVarArgP", "createRequest"]
+- !private ["s7CVarArgP", "dataTask"]
+- !private ["s7CVarArgP", "getDictionary"]
+- !private ["s7CVarArgP", "getEnrollment"]
+- !private ["s7CVarArgP", "getOffer"]
+- !private ["s7CVarArgP", "getRefereeRegister"]
+- !private ["s7CVarArgP", "getReferrerByName"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "main"]
+- !private ["s7CVarArgP", "resume"]
+- !private ["s7CVarArgP", "shared"]
+- !private ["s7CVarArgP", "statusCode"]
+- !private ["s7CVarArgP", "suspend"]
+- !private ["s28CustomDebugStringConvertibleP", "async"]
+- !private ["s28CustomDebugStringConvertibleP", "cancel"]
+- !private ["s28CustomDebugStringConvertibleP", "createRequest"]
+- !private ["s28CustomDebugStringConvertibleP", "dataTask"]
+- !private ["s28CustomDebugStringConvertibleP", "getDictionary"]
+- !private ["s28CustomDebugStringConvertibleP", "getEnrollment"]
+- !private ["s28CustomDebugStringConvertibleP", "getOffer"]
+- !private ["s28CustomDebugStringConvertibleP", "getRefereeRegister"]
+- !private ["s28CustomDebugStringConvertibleP", "getReferrerByName"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "main"]
+- !private ["s28CustomDebugStringConvertibleP", "resume"]
+- !private ["s28CustomDebugStringConvertibleP", "shared"]
+- !private ["s28CustomDebugStringConvertibleP", "statusCode"]
+- !private ["s28CustomDebugStringConvertibleP", "suspend"]
+- !private ["s23CustomStringConvertibleP", "async"]
+- !private ["s23CustomStringConvertibleP", "cancel"]
+- !private ["s23CustomStringConvertibleP", "createRequest"]
+- !private ["s23CustomStringConvertibleP", "dataTask"]
+- !private ["s23CustomStringConvertibleP", "getDictionary"]
+- !private ["s23CustomStringConvertibleP", "getEnrollment"]
+- !private ["s23CustomStringConvertibleP", "getOffer"]
+- !private ["s23CustomStringConvertibleP", "getRefereeRegister"]
+- !private ["s23CustomStringConvertibleP", "getReferrerByName"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "main"]
+- !private ["s23CustomStringConvertibleP", "resume"]
+- !private ["s23CustomStringConvertibleP", "shared"]
+- !private ["s23CustomStringConvertibleP", "statusCode"]
+- !private ["s23CustomStringConvertibleP", "suspend"]
+- !private ["So18OS_dispatch_objectC", "async"]
+- !private ["So18OS_dispatch_objectC", "main"]
+- !private ["So17OS_dispatch_queueC", "async"]
+- !private ["So17OS_dispatch_queueC", "main"]
+- !private ["SQ", "async"]
+- !private ["SQ", "cancel"]
+- !private ["SQ", "createRequest"]
+- !private ["SQ", "dataTask"]
+- !private ["SQ", "getDictionary"]
+- !private ["SQ", "getEnrollment"]
+- !private ["SQ", "getOffer"]
+- !private ["SQ", "getRefereeRegister"]
+- !private ["SQ", "getReferrerByName"]
+- !private ["SQ", "init"]
+- !private ["SQ", "main"]
+- !private ["SQ", "resume"]
+- !private ["SQ", "shared"]
+- !private ["SQ", "statusCode"]
+- !private ["SQ", "suspend"]
+- !private ["s5ErrorP", "init"]
+- !private ["So17NSHTTPURLResponseC", "statusCode"]
+- !private ["SH", "async"]
+- !private ["SH", "cancel"]
+- !private ["SH", "createRequest"]
+- !private ["SH", "dataTask"]
+- !private ["SH", "getDictionary"]
+- !private ["SH", "getEnrollment"]
+- !private ["SH", "getOffer"]
+- !private ["SH", "getRefereeRegister"]
+- !private ["SH", "getReferrerByName"]
+- !private ["SH", "init"]
+- !private ["SH", "main"]
+- !private ["SH", "resume"]
+- !private ["SH", "shared"]
+- !private ["SH", "statusCode"]
+- !private ["SH", "suspend"]
+- ["14MentionmeSwift0A0C", "Bool"]
+- ["14MentionmeSwift0A0C", "Data"]
+- !private ["14MentionmeSwift0A0C", "DispatchQueue"]
+- ["14MentionmeSwift0A0C", "Error"]
+- !private ["14MentionmeSwift0A0C", "HTTPURLResponse"]
+- ["14MentionmeSwift0A0C", "Mentionme"]
+- ["14MentionmeSwift0A0C", "MentionmeConfig"]
+- ["14MentionmeSwift0A0C", "MentionmeContentCollectionLink"]
+- ["14MentionmeSwift0A0C", "MentionmeCustomerRequest"]
+- ["14MentionmeSwift0A0C", "MentionmeError"]
+- ["14MentionmeSwift0A0C", "MentionmeOffer"]
+- ["14MentionmeSwift0A0C", "MentionmeOrderRequest"]
+- !private ["14MentionmeSwift0A0C", "MentionmeParser"]
+- ["14MentionmeSwift0A0C", "MentionmeRefereeRegisterRequest"]
+- ["14MentionmeSwift0A0C", "MentionmeRefereeReward"]
+- ["14MentionmeSwift0A0C", "MentionmeReferrer"]
+- ["14MentionmeSwift0A0C", "MentionmeReferrerByNameRequest"]
+- ["14MentionmeSwift0A0C", "MentionmeReferrerEnrollmentRequest"]
+- ["14MentionmeSwift0A0C", "MentionmeRequestParameters"]
+- ["14MentionmeSwift0A0C", "MentionmeShareLink"]
+- ["14MentionmeSwift0A0C", "MentionmeTermsLinks"]
+- ["14MentionmeSwift0A0C", "MentionmeValidationWarning"]
+- !private ["14MentionmeSwift0A0C", "NSError"]
+- ["14MentionmeSwift0A0C", "NSMutableURLRequest"]
+- ["14MentionmeSwift0A0C", "String"]
+- !private ["14MentionmeSwift0A0C", "URLRequest"]
+- ["14MentionmeSwift0A0C", "URLResponse"]
+- !private ["14MentionmeSwift0A0C", "URLSession"]
+- ["14MentionmeSwift0A0C", "URLSessionDataTask"]
+- ["14MentionmeSwift0A0C", "Void"]
+- ["14MentionmeSwift0A0C", "cancelRequest"]
+- ["14MentionmeSwift0A0C", "config"]
+- ["14MentionmeSwift0A0C", "enrolReferrer"]
+- ["14MentionmeSwift0A0C", "entryPointForReferrerEnrollment"]
+- ["14MentionmeSwift0A0C", "findReferrerByName"]
+- ["14MentionmeSwift0A0C", "init"]
+- ["14MentionmeSwift0A0C", "linkNewCustomerToReferrer"]
+- !private ["14MentionmeSwift0A0C", "performSessionDataTask"]
+- ["14MentionmeSwift0A0C", "recordOrder"]
+- ["14MentionmeSwift0A0C", "requestParameters"]
+- ["14MentionmeSwift0A0C", "resumeRequest"]
+- !private ["14MentionmeSwift0A0C", "sessionDataTask"]
+- ["14MentionmeSwift0A0C", "shared"]
+- ["14MentionmeSwift0A0C", "suspendRequest"]
+- ["14MentionmeSwift0A0C", "validationWarning"]
+- !private ["14MentionmeSwift0A15CustomerRequestC", "createRequest"]
+- !private ["14MentionmeSwift0A5ErrorC", "init"]
+- !private ["14MentionmeSwift0A12OrderRequestC", "createRequest"]
+- !private ["14MentionmeSwift0A6ParserC", "getDictionary"]
+- !private ["14MentionmeSwift0A6ParserC", "getEnrollment"]
+- !private ["14MentionmeSwift0A6ParserC", "getOffer"]
+- !private ["14MentionmeSwift0A6ParserC", "getRefereeRegister"]
+- !private ["14MentionmeSwift0A6ParserC", "getReferrerByName"]
+- !private ["14MentionmeSwift0A22RefereeRegisterRequestC", "createRequest"]
+- !private ["14MentionmeSwift0A21ReferrerByNameRequestC", "createRequest"]
+- !private ["14MentionmeSwift0A25ReferrerEnrollmentRequestC", "createRequest"]
+- !private ["14MentionmeSwift0A7RequestC", "createRequest"]
+- !private ["14MentionmeSwift0A17RequestParametersC", "situation"]
+- !private ["14MentionmeSwift0A17ValidationWarningC", "validate"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "statusCode"]
+- !private ["So9NSCopyingP", "cancel"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "resume"]
+- !private ["So9NSCopyingP", "statusCode"]
+- !private ["So9NSCopyingP", "suspend"]
+- !private ["So7NSErrorC", "init"]
+- !private ["So8NSObjectC", "async"]
+- !private ["So8NSObjectC", "cancel"]
+- !private ["So8NSObjectC", "createRequest"]
+- !private ["So8NSObjectC", "dataTask"]
+- !private ["So8NSObjectC", "getDictionary"]
+- !private ["So8NSObjectC", "getEnrollment"]
+- !private ["So8NSObjectC", "getOffer"]
+- !private ["So8NSObjectC", "getRefereeRegister"]
+- !private ["So8NSObjectC", "getReferrerByName"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "main"]
+- !private ["So8NSObjectC", "resume"]
+- !private ["So8NSObjectC", "shared"]
+- !private ["So8NSObjectC", "statusCode"]
+- !private ["So8NSObjectC", "suspend"]
+- !private ["So8NSObjectP", "async"]
+- !private ["So8NSObjectP", "cancel"]
+- !private ["So8NSObjectP", "createRequest"]
+- !private ["So8NSObjectP", "dataTask"]
+- !private ["So8NSObjectP", "getDictionary"]
+- !private ["So8NSObjectP", "getEnrollment"]
+- !private ["So8NSObjectP", "getOffer"]
+- !private ["So8NSObjectP", "getRefereeRegister"]
+- !private ["So8NSObjectP", "getReferrerByName"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "main"]
+- !private ["So8NSObjectP", "resume"]
+- !private ["So8NSObjectP", "shared"]
+- !private ["So8NSObjectP", "statusCode"]
+- !private ["So8NSObjectP", "suspend"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "statusCode"]
+- !private ["So9OS_objectC", "async"]
+- !private ["So9OS_objectC", "main"]
+- !private ["So19NSProgressReportingP", "cancel"]
+- !private ["So19NSProgressReportingP", "resume"]
+- !private ["So19NSProgressReportingP", "suspend"]
+- !private ["So13NSURLResponseC", "statusCode"]
+- !private ["So12NSURLSessionC", "dataTask"]
+- !private ["So12NSURLSessionC", "shared"]
+- !private ["So20NSURLSessionDataTaskC", "cancel"]
+- !private ["So20NSURLSessionDataTaskC", "resume"]
+- !private ["So20NSURLSessionDataTaskC", "suspend"]
+- !private ["So16NSURLSessionTaskC", "cancel"]
+- !private ["So16NSURLSessionTaskC", "resume"]
+- !private ["So16NSURLSessionTaskC", "suspend"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "async"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "cancel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "createRequest"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dataTask"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "getDictionary"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "getEnrollment"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "getOffer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "getRefereeRegister"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "getReferrerByName"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "resume"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "statusCode"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "suspend"]
+depends-nominal:
+- !private "s7CVarArgP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s23CustomStringConvertibleP"
+- !private "So18OS_dispatch_objectC"
+- !private "So17OS_dispatch_queueC"
+- !private "SQ"
+- !private "s5ErrorP"
+- !private "So17NSHTTPURLResponseC"
+- !private "SH"
+- "14MentionmeSwift0A0C"
+- !private "14MentionmeSwift0A15CustomerRequestC"
+- !private "14MentionmeSwift0A5ErrorC"
+- !private "14MentionmeSwift0A12OrderRequestC"
+- !private "14MentionmeSwift0A6ParserC"
+- !private "14MentionmeSwift0A22RefereeRegisterRequestC"
+- !private "14MentionmeSwift0A21ReferrerByNameRequestC"
+- !private "14MentionmeSwift0A25ReferrerEnrollmentRequestC"
+- !private "14MentionmeSwift0A7RequestC"
+- !private "14MentionmeSwift0A17RequestParametersC"
+- !private "14MentionmeSwift0A17ValidationWarningC"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So7NSErrorC"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "So9OS_objectC"
+- !private "So19NSProgressReportingP"
+- !private "So13NSURLResponseC"
+- !private "So12NSURLSessionC"
+- !private "So20NSURLSessionDataTaskC"
+- !private "So16NSURLSessionTaskC"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/SwiftOnoneSupport.swiftmodule"
+- "/Users/matt.long/Projects/FromMacBook/Projects/SDKiOS/Example/Pods/Target Support Files/MentionmeSwift/MentionmeSwift-umbrella.h"
+- "/Users/matt.long/Projects/FromMacBook/Projects/SDKiOS/Example/build/Pods.build/Debug-iphoneos/MentionmeSwift.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "fdc3ab2196ab11c140a887a67497e240"

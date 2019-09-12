@@ -8,9 +8,8 @@
 
 import UIKit
 import MentionmeSwift
-import MessageUI
 
-class EnrolReferrerResultsViewController: UIViewController, MFMailComposeViewControllerDelegate {
+class EnrolReferrerResultsViewController: UIViewController {
 
     @IBOutlet weak var label1: UILabel!
     @IBOutlet weak var label2: UILabel!
@@ -162,48 +161,6 @@ class EnrolReferrerResultsViewController: UIViewController, MFMailComposeViewCon
         descriptionLabel.text = descriptitionText
         shareButton.setTitle(shareButtonText, for: UIControlState.normal)
         titleLabel.text = titleText
-        
-        shareButton.addTarget(self, action: #selector(shareAction), for: UIControlEvents.touchUpInside)
-    }
-    
-    @objc func shareAction(){
-        
-        let message = "\(shareLinks?.first?.defaultShareMessage ?? "") \n \(shareLinks?.first?.url ?? "")"
-        
-        if mentionType == .email{
-            
-            if MFMailComposeViewController.canSendMail(){
-                
-                let mail = MFMailComposeViewController()
-                mail.mailComposeDelegate = self
-                mail.setToRecipients([""])
-                mail.setMessageBody(message, isHTML: false)
-                present(mail, animated: true, completion: nil)
-                
-            }else{
-                let alert = UIAlertController(title: "Error", message: "You need to set email settings.", preferredStyle: UIAlertControllerStyle.alert)
-                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-                self.present(alert, animated: true, completion: nil)
-            }
-            
-        }else{
-            
-            let activity = UIActivityViewController(activityItems: [message], applicationActivities: nil)
-            let excludeActivities = [UIActivityType.airDrop,
-                                     UIActivityType.print,
-                                     UIActivityType.copyToPasteboard,
-                                     UIActivityType.assignToContact,
-                                     UIActivityType.addToReadingList,
-                                     UIActivityType.mail,
-                                     UIActivityType.init(rawValue: "com.apple.mobilenotes.SharingExtension")]
-            activity.excludedActivityTypes = excludeActivities
-            present(activity, animated: true, completion: nil)
-        }
-        
-    }
-    
-    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
-        controller.dismiss(animated: true, completion: nil)
     }
     
     @objc func copyAction(){

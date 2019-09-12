@@ -17,10 +17,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        let config = MentionmeConfig(demo: true)
+        // Get the partner code value from the application's settings (if available)
+        let partnerCode = UserDefaults.standard.string(forKey: "partnerCode") ?? "set partnerCode in settings"
+        
+        // The environment code to use for non-live targets (demo by default)
+        let envCode = UserDefaults.standard.string(forKey: "envCode") ?? "demo"
+        
+        // Whether to use demo (default) or live endpoints
+        let useLive = UserDefaults.standard.bool(forKey: "useLive")
+
+        let config = MentionmeConfig(demo: !useLive, envCode: envCode)
         config.debugNetwork = true
         Mentionme.shared.config = config
-        let params = MentionmeRequestParameters(partnerCode: "PARTNER_CODE")
+        let params = MentionmeRequestParameters(partnerCode: partnerCode) // Matt's Board Games
+        
         if let appName = Bundle.main.infoDictionary!["CFBundleName"] as? String{
             params.appName = appName
         }
@@ -31,9 +41,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         params.localeCode = "en_GB"
         Mentionme.shared.requestParameters = params
         Mentionme.shared.validationWarning = CustomValidationWarning()
-        
-        //this disables the debug printing of unsatisfied constraints
-        UserDefaults.standard.setValue(false, forKey: "_UIConstraintBasedLayoutLogUnsatisfiable")
         
         return true
     }

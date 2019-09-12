@@ -18,9 +18,9 @@ class EnrolReferrerViewController: UIViewController {
     @IBOutlet weak var warningView: UIView!
     @IBOutlet weak var messageLabel: UILabel!
     
-    var firstname = "Logan"
-    var surname = "Smith"
-    var email = "logansmith813@mention-me.com"
+    var firstname = ""
+    var surname = ""
+    var email = ""
     var privacyTermsString = ""
     var offer: MentionmeOffer?
     var shareLinks: [MentionmeShareLink]?
@@ -28,11 +28,29 @@ class EnrolReferrerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        firstname = [
+            "John",
+            "Matthew",
+            "Tim",
+            "Edward",
+            "Gabriel"
+            ].randomElement()!
+        
+        surname = [
+            "John",
+            "Matthew",
+            "Tim",
+            "Edward",
+            "Gabriel"
+            ].randomElement()!
+        
+        email = firstname + surname + String(Int.random(in: 10 ... 99)) + "@example.com"
+        
         configureUI()
 
         checkIfReferrerCanEnrol()
     }
-    
+   
     func configureUI(){
         
         self.navigationItem.title = "Your Order is Complete"

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9Re-7g-rGa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9Re-7g-rGa">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -466,12 +466,11 @@
                     <connections>
                         <segue destination="C3U-Z6-qx8" kind="relationship" relationship="viewControllers" id="97P-bi-zFh"/>
                         <segue destination="4Ha-c8-5fH" kind="relationship" relationship="viewControllers" id="kfB-MM-jjc"/>
-                        <segue destination="8bj-xj-NQ0" kind="relationship" relationship="viewControllers" id="mHT-w7-I9W"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IgZ-nr-JGd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1778" y="281"/>
+            <point key="canvasLocation" x="-1632" y="-162"/>
         </scene>
         <!--Referrer-->
         <scene sceneID="OyZ-zH-A10">
@@ -510,40 +509,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aja-v0-D5u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-682" y="282"/>
-        </scene>
-        <!--Dashboard View Controller-->
-        <scene sceneID="x2e-sh-s6L">
-            <objects>
-                <viewController id="p2N-ZW-QQU" customClass="DashboardViewController" customModule="MentionmeSwift_Example" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="w10-gm-Hg6"/>
-                        <viewControllerLayoutGuide type="bottom" id="vc9-vd-fig"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Tch-av-xXS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="slD-LP-plT">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="vc9-vd-fig" firstAttribute="top" secondItem="slD-LP-plT" secondAttribute="bottom" id="1e5-Gn-NXc"/>
-                            <constraint firstAttribute="trailing" secondItem="slD-LP-plT" secondAttribute="trailing" id="20D-8g-7K7"/>
-                            <constraint firstItem="slD-LP-plT" firstAttribute="leading" secondItem="Tch-av-xXS" secondAttribute="leading" id="L3L-Qb-E7p"/>
-                            <constraint firstItem="slD-LP-plT" firstAttribute="top" secondItem="w10-gm-Hg6" secondAttribute="bottom" id="PZF-Tv-JCf"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="7p9-bQ-RLo"/>
-                    <connections>
-                        <outlet property="tableView" destination="slD-LP-plT" id="wAB-V8-iAR"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5xM-iB-DsN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="165.59999999999999" y="1055.6221889055473"/>
         </scene>
         <!--Find Referrer View Controller-->
         <scene sceneID="STd-5Q-fqP">
@@ -723,7 +688,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14K-qX-7yX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1924" y="278"/>
+            <point key="canvasLocation" x="1017" y="280"/>
         </scene>
         <!--Referrer Not Found Or Multiple View Controller-->
         <scene sceneID="2ZA-ym-bTL">
@@ -828,7 +793,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WjY-Ye-Nwk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047" y="214"/>
+            <point key="canvasLocation" x="348" y="1080"/>
         </scene>
         <!--Link Customer View Controller-->
         <scene sceneID="yql-aI-9JF">
@@ -985,43 +950,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZlW-yh-LMh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2802" y="279"/>
-        </scene>
-        <!--Dashboard-->
-        <scene sceneID="jBr-Y0-oqe">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8bj-xj-NQ0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Dashboard" image="dashboard" selectedImage="dashboardSelected" id="bVE-D0-1oi"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="n01-lh-6xH">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="p2N-ZW-QQU" kind="relationship" relationship="rootViewController" id="cqH-38-gkt"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="t7W-n8-u7Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-682.39999999999998" y="1057.4212893553224"/>
+            <point key="canvasLocation" x="1877.5999999999999" y="278.41079460269867"/>
         </scene>
     </scenes>
     <resources>
-        <image name="chatIcon" width="750" height="750"/>
-        <image name="dashboard" width="80" height="68"/>
-        <image name="dashboardSelected" width="82" height="69"/>
-        <image name="emailSelectedIcon" width="750" height="750"/>
-        <image name="fbIcon" width="750" height="750"/>
+        <image name="chatIcon" width="375" height="375"/>
+        <image name="emailSelectedIcon" width="375" height="375"/>
+        <image name="fbIcon" width="375" height="375"/>
         <image name="logoIcon" width="260" height="268"/>
-        <image name="messengerIcon" width="750" height="750"/>
+        <image name="messengerIcon" width="375" height="375"/>
         <image name="powered-by-center" width="442" height="158"/>
         <image name="refereeSelected" width="40" height="40"/>
         <image name="referrerSelected" width="40" height="40"/>
         <image name="unselected" width="40" height="40"/>
-        <image name="whatsappIcon" width="750" height="750"/>
+        <image name="whatsappIcon" width="375" height="375"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="VYe-It-5Og"/>
+        <segue reference="1ow-2U-DDH"/>
     </inferredMetricsTieBreakers>
 </document>

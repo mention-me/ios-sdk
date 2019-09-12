@@ -38,13 +38,25 @@ class LinkCustomerViewController: UIViewController {
         //status can be "Success", "OfferAlreadyFulfilled", "OfferAlreadyRedeemed"
         
         if let status = status{
-            if status == "OfferAlreadyRedeemed"{
+            
+            if let resources = content?.resource{
+                for resource in resources{
+                    if resource.key == "headline" {
+                        label1.text = resource.content
+                    }
+                    
+                    if resource.key == "detail" {
+                        label2.text = resource.content
+                    }
+                }
+            }
+            
+            if status == "OfferAlreadyRedeemed" || status == "ReferringSelf" || status == "AlreadyCustomer" {
                 
                 backgroundWhiteView.isHidden = true
-                label1.text = "You've already claimed this offer."
-                label2.text = "You have already claimed this offer after \(firstname) introduced you. You can only claim it from one friend."
                 
-            }else if status == "OfferAlreadyFulfilled"{
+                
+            }else if status == "OfferAlreadyFulfilled" || status == "Success" {
                 
                 backgroundWhiteView.layer.cornerRadius = 10
                 emailLabel.text = "For use by \(email) only"
@@ -58,44 +70,6 @@ class LinkCustomerViewController: UIViewController {
                     codeLabel.text = couponCode
                 }
                 labelOff.text = offer?.refereeReward?.summary ?? ""
-                
-            }else if status == "Success"{
-        
-                backgroundWhiteView.layer.cornerRadius = 10
-                emailLabel.text = "For use by \(email) only"
-                label2.text = "This reward is valid for 7 days. We've also emailed this to you."
-                if let descr = refereeReward?.descriptionRefereeReward{
-                    label1.text = descr
-                }
-                if let couponCode = refereeReward?.couponCode{
-                    codeLabel.text = couponCode
-                }
-                labelOff.text = offer?.refereeReward?.summary ?? ""
-                
-            }else if status == "ReferringSelf"{
-                
-                backgroundWhiteView.isHidden = true
-                label1.text = "Sorry \(firstname)"
-                var token = ""
-                if let resources = content?.resource{
-                    for resource in resources{
-                        if resource.token.count > token.count{
-                            token = resource.token
-                        }
-                    }
-                }
-                label2.text = token
-                
-            }else if status == "AlreadyCustomer"{
-                backgroundWhiteView.isHidden = true
-                var token = ""
-                if let resources = content?.resource{
-                    for resource in resources{
-                        token = resource.headline
-                    }
-                }
-                label1.text = token
-                label2.text = offer?.headline ?? ""
                 
             }
             

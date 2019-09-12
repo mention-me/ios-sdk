@@ -1,0 +1,235 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "MentionmeRefereeRegisterRequest"
+provides-nominal:
+- "14MentionmeSwift0A22RefereeRegisterRequestC"
+provides-member:
+- ["14MentionmeSwift0A22RefereeRegisterRequestC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "AssignmentPrecedence"
+- "MentionmeCustomerParameters"
+- "MentionmeRefereeRegisterRequest"
+- "MentionmeReferrerParameters"
+- "MentionmeRequest"
+- "MentionmeRequestParameters"
+- !private "MethodType"
+- "NSMutableURLRequest"
+- !private "String"
+depends-member:
+- !private ["s7CVarArgP", "MethodType"]
+- !private ["s7CVarArgP", "String"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "bodyParameters"]
+- !private ["s7CVarArgP", "createBodyParameters"]
+- !private ["s7CVarArgP", "createRequest"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "mentionmeCustomerParameters"]
+- !private ["s7CVarArgP", "mentionmeReferrerParameters"]
+- !private ["s7CVarArgP", "method"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "urlEndpoint"]
+- !private ["s7CVarArgP", "urlSuffix"]
+- !private ["Sl", "init"]
+- !private ["Sl", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "MethodType"]
+- !private ["s28CustomDebugStringConvertibleP", "String"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "bodyParameters"]
+- !private ["s28CustomDebugStringConvertibleP", "createBodyParameters"]
+- !private ["s28CustomDebugStringConvertibleP", "createRequest"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "mentionmeCustomerParameters"]
+- !private ["s28CustomDebugStringConvertibleP", "mentionmeReferrerParameters"]
+- !private ["s28CustomDebugStringConvertibleP", "method"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "urlEndpoint"]
+- !private ["s28CustomDebugStringConvertibleP", "urlSuffix"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "MethodType"]
+- !private ["s23CustomStringConvertibleP", "String"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "bodyParameters"]
+- !private ["s23CustomStringConvertibleP", "createBodyParameters"]
+- !private ["s23CustomStringConvertibleP", "createRequest"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "mentionmeCustomerParameters"]
+- !private ["s23CustomStringConvertibleP", "mentionmeReferrerParameters"]
+- !private ["s23CustomStringConvertibleP", "method"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "urlEndpoint"]
+- !private ["s23CustomStringConvertibleP", "urlSuffix"]
+- !private ["Se", "init"]
+- !private ["Se", "subscript"]
+- !private ["SD", "init"]
+- !private ["SD", "subscript"]
+- !private ["SE", "init"]
+- !private ["SE", "subscript"]
+- !private ["SQ", "MethodType"]
+- !private ["SQ", "String"]
+- ["SQ", ""]
+- !private ["SQ", "bodyParameters"]
+- !private ["SQ", "createBodyParameters"]
+- !private ["SQ", "createRequest"]
+- !private ["SQ", "init"]
+- !private ["SQ", "mentionmeCustomerParameters"]
+- !private ["SQ", "mentionmeReferrerParameters"]
+- !private ["SQ", "method"]
+- !private ["SQ", "post"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "urlEndpoint"]
+- !private ["SQ", "urlSuffix"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "init"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- !private ["SH", "MethodType"]
+- !private ["SH", "String"]
+- ["SH", ""]
+- !private ["SH", "bodyParameters"]
+- !private ["SH", "createBodyParameters"]
+- !private ["SH", "createRequest"]
+- !private ["SH", "init"]
+- !private ["SH", "mentionmeCustomerParameters"]
+- !private ["SH", "mentionmeReferrerParameters"]
+- !private ["SH", "method"]
+- !private ["SH", "post"]
+- !private ["SH", "subscript"]
+- !private ["SH", "urlEndpoint"]
+- !private ["SH", "urlSuffix"]
+- !private ["14MentionmeSwift0A18CustomerParametersC", "emailAddress"]
+- !private ["14MentionmeSwift0A18CustomerParametersC", "firstname"]
+- !private ["14MentionmeSwift0A18CustomerParametersC", "segment"]
+- !private ["14MentionmeSwift0A18CustomerParametersC", "surname"]
+- !private ["14MentionmeSwift0A18CustomerParametersC", "title"]
+- !private ["14MentionmeSwift0A18CustomerParametersC", "uniqueIdentifier"]
+- ["14MentionmeSwift0A22RefereeRegisterRequestC", "MentionmeCustomerParameters"]
+- ["14MentionmeSwift0A22RefereeRegisterRequestC", "MentionmeReferrerParameters"]
+- ["14MentionmeSwift0A22RefereeRegisterRequestC", "MentionmeRequestParameters"]
+- !private ["14MentionmeSwift0A22RefereeRegisterRequestC", "MethodType"]
+- ["14MentionmeSwift0A22RefereeRegisterRequestC", "NSMutableURLRequest"]
+- !private ["14MentionmeSwift0A22RefereeRegisterRequestC", "String"]
+- !private ["14MentionmeSwift0A22RefereeRegisterRequestC", "bodyParameters"]
+- ["14MentionmeSwift0A22RefereeRegisterRequestC", "createBodyParameters"]
+- ["14MentionmeSwift0A22RefereeRegisterRequestC", "createRequest"]
+- ["14MentionmeSwift0A22RefereeRegisterRequestC", "deinit"]
+- ["14MentionmeSwift0A22RefereeRegisterRequestC", "init"]
+- ["14MentionmeSwift0A22RefereeRegisterRequestC", "mentionmeCustomerParameters"]
+- ["14MentionmeSwift0A22RefereeRegisterRequestC", "mentionmeReferrerParameters"]
+- !private ["14MentionmeSwift0A18ReferrerParametersC", "referrerMentionMeIdentifier"]
+- !private ["14MentionmeSwift0A18ReferrerParametersC", "referrerToken"]
+- ["14MentionmeSwift0A7RequestC", "MentionmeCustomerParameters"]
+- ["14MentionmeSwift0A7RequestC", "MentionmeReferrerParameters"]
+- ["14MentionmeSwift0A7RequestC", "MentionmeRequestParameters"]
+- !private ["14MentionmeSwift0A7RequestC", "MethodType"]
+- ["14MentionmeSwift0A7RequestC", "NSMutableURLRequest"]
+- !private ["14MentionmeSwift0A7RequestC", "String"]
+- ["14MentionmeSwift0A7RequestC", ""]
+- !private ["14MentionmeSwift0A7RequestC", "bodyParameters"]
+- ["14MentionmeSwift0A7RequestC", "createBodyParameters"]
+- ["14MentionmeSwift0A7RequestC", "createRequest"]
+- ["14MentionmeSwift0A7RequestC", "init"]
+- ["14MentionmeSwift0A7RequestC", "mentionmeCustomerParameters"]
+- ["14MentionmeSwift0A7RequestC", "mentionmeReferrerParameters"]
+- !private ["14MentionmeSwift0A7RequestC", "method"]
+- !private ["14MentionmeSwift0A7RequestC", "urlEndpoint"]
+- !private ["14MentionmeSwift0A7RequestC", "urlSuffix"]
+- !private ["14MentionmeSwift10MethodTypeO", "post"]
+- ["So8NSObjectC", "MentionmeCustomerParameters"]
+- ["So8NSObjectC", "MentionmeReferrerParameters"]
+- ["So8NSObjectC", "MentionmeRequestParameters"]
+- !private ["So8NSObjectC", "MethodType"]
+- ["So8NSObjectC", "NSMutableURLRequest"]
+- !private ["So8NSObjectC", "String"]
+- !private ["So8NSObjectC", "bodyParameters"]
+- ["So8NSObjectC", "createBodyParameters"]
+- ["So8NSObjectC", "createRequest"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "mentionmeCustomerParameters"]
+- ["So8NSObjectC", "mentionmeReferrerParameters"]
+- !private ["So8NSObjectC", "method"]
+- !private ["So8NSObjectC", "urlEndpoint"]
+- !private ["So8NSObjectC", "urlSuffix"]
+- !private ["So8NSObjectP", "MethodType"]
+- !private ["So8NSObjectP", "String"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "bodyParameters"]
+- !private ["So8NSObjectP", "createBodyParameters"]
+- !private ["So8NSObjectP", "createRequest"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "mentionmeCustomerParameters"]
+- !private ["So8NSObjectP", "mentionmeReferrerParameters"]
+- !private ["So8NSObjectP", "method"]
+- !private ["So8NSObjectP", "urlEndpoint"]
+- !private ["So8NSObjectP", "urlSuffix"]
+- !private ["SY", "post"]
+- !private ["ST", "init"]
+- !private ["ST", "subscript"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "MethodType"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "String"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "bodyParameters"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "createBodyParameters"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "createRequest"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "mentionmeCustomerParameters"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "mentionmeReferrerParameters"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "method"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "urlEndpoint"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "urlSuffix"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+depends-nominal:
+- "s7CVarArgP"
+- !private "Sl"
+- "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SD"
+- !private "SE"
+- "SQ"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- "SH"
+- !private "14MentionmeSwift0A18CustomerParametersC"
+- "14MentionmeSwift0A22RefereeRegisterRequestC"
+- !private "14MentionmeSwift0A18ReferrerParametersC"
+- "14MentionmeSwift0A7RequestC"
+- !private "14MentionmeSwift10MethodTypeO"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "SY"
+- !private "ST"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/matt.long/Projects/FromMacBook/Projects/SDKiOS/Example/Pods/Target Support Files/MentionmeSwift/MentionmeSwift-umbrella.h"
+- "/Users/matt.long/Projects/FromMacBook/Projects/SDKiOS/Example/build/Pods.build/Debug-iphoneos/MentionmeSwift.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "4cc01ead29b27530a626ecbe2514a11c"

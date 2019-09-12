@@ -1,0 +1,297 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "MentionmeValidationWarning"
+provides-nominal:
+- "14MentionmeSwift0A17ValidationWarningC"
+provides-member:
+- ["14MentionmeSwift0A17ValidationWarningC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!="
+- !private "=="
+- !private ">"
+- "CastingPrecedence"
+- !private "Int"
+- "MentionmeCustomerParameters"
+- "MentionmeCustomerRequest"
+- "MentionmeOrderParameters"
+- "MentionmeOrderRequest"
+- "MentionmeRefereeRegisterRequest"
+- "MentionmeReferrerByNameRequest"
+- "MentionmeReferrerNameParameters"
+- "MentionmeRequest"
+- "MentionmeRequestParameters"
+- "MentionmeValidationWarning"
+- !private "NSRange"
+- !private "NSRegularExpression"
+- "String"
+- !private "print"
+depends-member:
+- !private ["s18AdditiveArithmeticP", "init"]
+- !private ["Sa", "count"]
+- !private ["SK", "count"]
+- !private ["Sz", "init"]
+- !private ["s7CVarArgP", "count"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "matches"]
+- !private ["s7CVarArgP", "mentionmeCustomerParameters"]
+- !private ["s7CVarArgP", "mentionmeOrderParameters"]
+- !private ["s7CVarArgP", "mentionmeReferrerNameParameters"]
+- !private ["Sl", "count"]
+- !private ["SL", "count"]
+- !private ["SL", "init"]
+- !private ["10Foundation15ContiguousBytesP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "matches"]
+- !private ["s28CustomDebugStringConvertibleP", "mentionmeCustomerParameters"]
+- !private ["s28CustomDebugStringConvertibleP", "mentionmeOrderParameters"]
+- !private ["s28CustomDebugStringConvertibleP", "mentionmeReferrerNameParameters"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "matches"]
+- !private ["s23CustomStringConvertibleP", "mentionmeCustomerParameters"]
+- !private ["s23CustomStringConvertibleP", "mentionmeOrderParameters"]
+- !private ["s23CustomStringConvertibleP", "mentionmeReferrerNameParameters"]
+- !private ["10Foundation12DataProtocolP", "count"]
+- !private ["Se", "count"]
+- !private ["Se", "init"]
+- !private ["SE", "count"]
+- !private ["SE", "init"]
+- !private ["SQ", "count"]
+- !private ["SQ", "init"]
+- !private ["SQ", "matches"]
+- !private ["SQ", "mentionmeCustomerParameters"]
+- !private ["SQ", "mentionmeOrderParameters"]
+- !private ["SQ", "mentionmeReferrerNameParameters"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "count"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s32ExpressibleByStringInterpolationP", "count"]
+- !private ["s26ExpressibleByStringLiteralP", "count"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "count"]
+- !private ["s17FixedWidthIntegerP", "init"]
+- !private ["SH", "count"]
+- !private ["SH", "init"]
+- !private ["SH", "matches"]
+- !private ["SH", "mentionmeCustomerParameters"]
+- !private ["SH", "mentionmeOrderParameters"]
+- !private ["SH", "mentionmeReferrerNameParameters"]
+- !private ["Si", "init"]
+- !private ["s25LosslessStringConvertibleP", "count"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["14MentionmeSwift0A18CustomerParametersC", "emailAddress"]
+- !private ["14MentionmeSwift0A18CustomerParametersC", "firstname"]
+- !private ["14MentionmeSwift0A18CustomerParametersC", "segment"]
+- !private ["14MentionmeSwift0A18CustomerParametersC", "surname"]
+- !private ["14MentionmeSwift0A18CustomerParametersC", "title"]
+- !private ["14MentionmeSwift0A18CustomerParametersC", "uniqueIdentifier"]
+- !private ["14MentionmeSwift0A15CustomerRequestC", "mentionmeCustomerParameters"]
+- !private ["14MentionmeSwift0A15OrderParametersC", "couponCode"]
+- !private ["14MentionmeSwift0A15OrderParametersC", "currencyCode"]
+- !private ["14MentionmeSwift0A15OrderParametersC", "orderIdentifier"]
+- !private ["14MentionmeSwift0A12OrderRequestC", "mentionmeCustomerParameters"]
+- !private ["14MentionmeSwift0A12OrderRequestC", "mentionmeOrderParameters"]
+- !private ["14MentionmeSwift0A22RefereeRegisterRequestC", "mentionmeCustomerParameters"]
+- !private ["14MentionmeSwift0A21ReferrerByNameRequestC", "mentionmeReferrerNameParameters"]
+- !private ["14MentionmeSwift0A22ReferrerNameParametersC", "email"]
+- !private ["14MentionmeSwift0A22ReferrerNameParametersC", "name"]
+- !private ["14MentionmeSwift0A7RequestC", "mentionmeCustomerParameters"]
+- !private ["14MentionmeSwift0A7RequestC", "mentionmeOrderParameters"]
+- !private ["14MentionmeSwift0A7RequestC", "mentionmeReferrerNameParameters"]
+- !private ["14MentionmeSwift0A17RequestParametersC", "ipAddress"]
+- !private ["14MentionmeSwift0A17RequestParametersC", "localeCode"]
+- !private ["14MentionmeSwift0A17RequestParametersC", "partnerCode"]
+- !private ["14MentionmeSwift0A17RequestParametersC", "situation"]
+- !private ["14MentionmeSwift0A17RequestParametersC", "variation"]
+- !private ["14MentionmeSwift0A17ValidationWarningC", "Int"]
+- ["14MentionmeSwift0A17ValidationWarningC", "MentionmeCustomerParameters"]
+- ["14MentionmeSwift0A17ValidationWarningC", "MentionmeCustomerRequest"]
+- ["14MentionmeSwift0A17ValidationWarningC", "MentionmeOrderParameters"]
+- ["14MentionmeSwift0A17ValidationWarningC", "MentionmeOrderRequest"]
+- ["14MentionmeSwift0A17ValidationWarningC", "MentionmeRefereeRegisterRequest"]
+- ["14MentionmeSwift0A17ValidationWarningC", "MentionmeReferrerByNameRequest"]
+- ["14MentionmeSwift0A17ValidationWarningC", "MentionmeReferrerNameParameters"]
+- ["14MentionmeSwift0A17ValidationWarningC", "MentionmeRequest"]
+- ["14MentionmeSwift0A17ValidationWarningC", "MentionmeRequestParameters"]
+- !private ["14MentionmeSwift0A17ValidationWarningC", "NSRange"]
+- !private ["14MentionmeSwift0A17ValidationWarningC", "NSRegularExpression"]
+- ["14MentionmeSwift0A17ValidationWarningC", "String"]
+- ["14MentionmeSwift0A17ValidationWarningC", "init"]
+- !private ["14MentionmeSwift0A17ValidationWarningC", "print"]
+- ["14MentionmeSwift0A17ValidationWarningC", "reportWarning"]
+- ["14MentionmeSwift0A17ValidationWarningC", "validate"]
+- !private ["14MentionmeSwift0A17ValidationWarningC", "validateCustomerParameters"]
+- !private ["14MentionmeSwift0A17ValidationWarningC", "validateCustomerRequest"]
+- !private ["14MentionmeSwift0A17ValidationWarningC", "validateOrderParameters"]
+- !private ["14MentionmeSwift0A17ValidationWarningC", "validateOrderRequest"]
+- !private ["14MentionmeSwift0A17ValidationWarningC", "validateRefereeRequest"]
+- !private ["14MentionmeSwift0A17ValidationWarningC", "validateReferrerByNameParameters"]
+- !private ["14MentionmeSwift0A17ValidationWarningC", "validateReferrerByNameRequest"]
+- !private ["s10MirrorPathP", "count"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["SM", "count"]
+- !private ["10Foundation19MutableDataProtocolP", "count"]
+- !private ["So8NSCodingP", "count"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "matches"]
+- !private ["So9NSCopyingP", "count"]
+- !private ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "matches"]
+- !private ["So21NSItemProviderReadingP", "count"]
+- !private ["So21NSItemProviderWritingP", "count"]
+- !private ["So16NSMutableCopyingP", "count"]
+- !private ["So8NSObjectC", "count"]
+- !private ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "matches"]
+- !private ["So8NSObjectC", "mentionmeCustomerParameters"]
+- !private ["So8NSObjectC", "mentionmeOrderParameters"]
+- !private ["So8NSObjectC", "mentionmeReferrerNameParameters"]
+- !private ["So8NSObjectP", "count"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "matches"]
+- !private ["So8NSObjectP", "mentionmeCustomerParameters"]
+- !private ["So8NSObjectP", "mentionmeOrderParameters"]
+- !private ["So8NSObjectP", "mentionmeReferrerNameParameters"]
+- !private ["So19NSRegularExpressionC", "init"]
+- !private ["So19NSRegularExpressionC", "matches"]
+- !private ["So14NSSecureCodingP", "count"]
+- !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "matches"]
+- !private ["So8NSStringC", "count"]
+- !private ["Sj", "init"]
+- !private ["Sk", "count"]
+- !private ["Sm", "count"]
+- !private ["s10SIMDScalarP", "init"]
+- !private ["ST", "count"]
+- !private ["SZ", "init"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["Sx", "init"]
+- !private ["SS", "count"]
+- !private ["Sy", "count"]
+- !private ["s16TextOutputStreamP", "count"]
+- !private ["s20TextOutputStreamableP", "count"]
+- !private ["s14_ArrayProtocolP", "count"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "count"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "count"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "count"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "count"]
+- !private ["s19_HasContiguousBytesP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "count"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "matches"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "mentionmeCustomerParameters"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "mentionmeOrderParameters"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "mentionmeReferrerNameParameters"]
+- !private ["So8_NSRangeV", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+depends-nominal:
+- !private "s18AdditiveArithmeticP"
+- !private "Sa"
+- !private "SK"
+- !private "Sz"
+- !private "s7CVarArgP"
+- !private "Sl"
+- !private "SL"
+- !private "10Foundation15ContiguousBytesP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
+- !private "SE"
+- !private "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s17FixedWidthIntegerP"
+- !private "SH"
+- !private "Si"
+- !private "s25LosslessStringConvertibleP"
+- !private "14MentionmeSwift0A18CustomerParametersC"
+- !private "14MentionmeSwift0A15CustomerRequestC"
+- !private "14MentionmeSwift0A15OrderParametersC"
+- !private "14MentionmeSwift0A12OrderRequestC"
+- !private "14MentionmeSwift0A22RefereeRegisterRequestC"
+- !private "14MentionmeSwift0A21ReferrerByNameRequestC"
+- !private "14MentionmeSwift0A22ReferrerNameParametersC"
+- !private "14MentionmeSwift0A7RequestC"
+- !private "14MentionmeSwift0A17RequestParametersC"
+- "14MentionmeSwift0A17ValidationWarningC"
+- !private "s10MirrorPathP"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "So19NSRegularExpressionC"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "Sj"
+- !private "Sk"
+- !private "Sm"
+- !private "s10SIMDScalarP"
+- !private "ST"
+- !private "SZ"
+- !private "s13SignedNumericP"
+- !private "Sx"
+- !private "SS"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "s14_ArrayProtocolP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "So8_NSRangeV"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/matt.long/Projects/FromMacBook/Projects/SDKiOS/Example/Pods/Target Support Files/MentionmeSwift/MentionmeSwift-umbrella.h"
+- "/Users/matt.long/Projects/FromMacBook/Projects/SDKiOS/Example/build/Pods.build/Debug-iphoneos/MentionmeSwift.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "edd1edfaea134375aa607f321bc8a86b"
