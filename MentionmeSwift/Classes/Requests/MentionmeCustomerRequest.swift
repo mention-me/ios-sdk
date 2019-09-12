@@ -31,6 +31,7 @@ public class MentionmeCustomerRequest: MentionmeRequest {
         
         if let mentionmeCustomerParameters = mentionmeCustomerParameters{
             
+            
             var customerParams: [String: Any] = [String: Any]()
             
             customerParams["emailAddress"] = mentionmeCustomerParameters.emailAddress
@@ -39,8 +40,8 @@ public class MentionmeCustomerRequest: MentionmeRequest {
             if let title = mentionmeCustomerParameters.title{
                 customerParams["title"] = title
             }
-            if let uniqueIdentifier = mentionmeCustomerParameters.uniqueIdentifier{
-                customerParams["uniqueIdentifier"] = uniqueIdentifier
+            if let uniqueIdentifer = mentionmeCustomerParameters.uniqueIdentifier{
+                customerParams["uniqueIdentifer"] = uniqueIdentifer
             }
             if let segment = mentionmeCustomerParameters.segment{
                 customerParams["segment"] = segment

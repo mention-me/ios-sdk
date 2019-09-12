@@ -131,7 +131,8 @@ public class Mentionme {
     /**
         Get a referrer's dashboard (given a referrer identity, get their dashboard data)
      */
-    public func getReferrerDashboard(mentionmeDashboardRequest: MentionmeDashboardRequest,
+    // NOT IMPLEMENTED IN CURRENT VERSION OF API
+    /*public func getReferrerDashboard(mentionmeDashboardRequest: MentionmeDashboardRequest,
                                      situation: String,
                                      success: @escaping (_ offer: MentionmeOffer?,
                                                          _ links: [MentionmeShareLink]?,
@@ -145,11 +146,6 @@ public class Mentionme {
             noResponse(NSError(domain: "com.Mentionme.requestParameters.error", code: 405, userInfo: ["error": "There are no request parameters set."]) as Error)
             return
         }
-        
-        requestParameters.situation = situation
-        
-        validationWarning?.validate(requestParameters: requestParameters)
-        validationWarning?.validate(mentionmeRequest: mentionmeDashboardRequest)
         
         let request = mentionmeDashboardRequest.createRequest(requestParameters: requestParameters)
         
@@ -182,7 +178,7 @@ public class Mentionme {
             }
         }
         
-    }
+    }*/
     
     /**
         Search for a referrer to connect to a referee, using just their name

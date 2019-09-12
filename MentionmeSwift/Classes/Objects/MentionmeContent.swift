@@ -11,21 +11,21 @@ import Foundation
 public class MentionmeContent{
     
     /**
-     * Token
+     * Key
      */
-    public var token: String = ""
+    public var key: String = ""
     /**
-     * The headline
+     * Content
      */
-    public var headline: String = ""
+    public var content: String = ""
     
     init(withDictionary dict: NSDictionary) {
         
-        if let token = dict["token"] as? String{
-            self.token = token
+        if let key = dict["key"] as? String{
+            self.key = key
         }
-        if let headline = dict["headline"] as? String{
-            self.headline = headline
+        if let content = dict["content"] as? String{
+            self.content = content
         }
         
     }

@@ -15,9 +15,8 @@ enum MethodType: String{
 
 public class MentionmeRequest: NSObject {
     
-    var baseURLUAT = "https://uat.mention-me.com"
-    var baseURLDemo = "https://demo.mention-me.com"
-    var baseURL = "https://mention-me.com"
+    var baseURLForEnv = "https://{{env}}.mention-me.com"
+    var baseURL = "https://mention-me.com/api"
     var urlSuffix = ""
     var urlEndpoint = ""
     var method: MethodType?
@@ -52,11 +51,10 @@ public class MentionmeRequest: NSObject {
         
         if let config = Mentionme.shared.config{
             if config.demo{
-                urlString = "\(baseURLDemo)/api/\(urlEndpoint)/v1/\(urlSuffix)"
-            }else if config.uat{
-                urlString = "\(baseURLUAT)/api/\(urlEndpoint)/v1/\(urlSuffix)"
+                let targetUrl = baseURLForEnv.replacingOccurrences(of: "{{env}}", with: config.envCode)
+                urlString = "\(targetUrl)/api/\(urlEndpoint)/v1/\(urlSuffix)"
             }
-        }
+        }  
         
         if var queryParams = queryParameters{
             urlString += "?"

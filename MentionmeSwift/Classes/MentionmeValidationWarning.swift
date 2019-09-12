@@ -23,8 +23,6 @@ open class MentionmeValidationWarning{
             validateReferrerByNameRequest(referrerByNameRequest: referrerByNameRequest)
         }else if let orderRequest = mentionmeRequest as? MentionmeOrderRequest{
             validateOrderRequest(orderRequest: orderRequest)
-        }else if let dashboardRequest = mentionmeRequest as? MentionmeDashboardRequest{
-            validateDashboardRequest(dashboardRequest: dashboardRequest)
         }
         
     }
@@ -100,25 +98,6 @@ open class MentionmeValidationWarning{
         if let customerParameters = refereeRegisterRequest.mentionmeCustomerParameters{
             validateCustomerParameters(customerParameters)
         }
-    }
-    
-    private func validateDashboardRequest(dashboardRequest: MentionmeDashboardRequest){
-        
-        if let dashboardParameters = dashboardRequest.mentionmeDashboardParameters{
-            validateDashboardParameters(dashboardParameters)
-        }
-        
-    }
-    
-    private func validateDashboardParameters(_ dashboardParameters: MentionmeDashboardParameters){
-        
-        if dashboardParameters.emailAddress.count > 255 {
-            reportWarning("Dashboard Parameter emailAddress is over 255 characters")
-        }
-        if let uniquerCustomerIdentifier = dashboardParameters.uniqueCustomerIdentifier, uniquerCustomerIdentifier.count > 255{
-            reportWarning("Dashboard Parameter uniqueCustomerIdentifier is over 255 characters")
-        }
-        
     }
     
     private func validateReferrerByNameParameters(_ referrerByNameParameters: MentionmeReferrerNameParameters){
