@@ -102,7 +102,7 @@ class LinkCustomerViewController: UIViewController {
         }
         
         
-        copyButton.addTarget(self, action: #selector(copyAction), for: UIControlEvents.touchUpInside)
+        copyButton.addTarget(self, action: #selector(copyAction), for: UIControl.Event.touchUpInside)
     }
     
     @objc func copyAction(){

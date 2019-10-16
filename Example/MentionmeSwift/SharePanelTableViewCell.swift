@@ -33,11 +33,11 @@ class SharePanelTableViewCell: UITableViewCell {
         
         nameLabel.text = referrerName
         
-        shareUsingNameButton.addTarget(self, action: #selector(shareUsingNameAction), for: UIControlEvents.touchUpInside)
-        emailShareButton.addTarget(self, action: #selector(emailShareAction), for: UIControlEvents.touchUpInside)
-        facebookShareButton.addTarget(self, action: #selector(facebookShareAction), for: UIControlEvents.touchUpInside)
-        messengerShareButton.addTarget(self, action: #selector(messengerShareAction), for: UIControlEvents.touchUpInside)
-        linkShareButton.addTarget(self, action: #selector(linkShareAction), for: UIControlEvents.touchUpInside)
+        shareUsingNameButton.addTarget(self, action: #selector(shareUsingNameAction), for: UIControl.Event.touchUpInside)
+        emailShareButton.addTarget(self, action: #selector(emailShareAction), for: UIControl.Event.touchUpInside)
+        facebookShareButton.addTarget(self, action: #selector(facebookShareAction), for: UIControl.Event.touchUpInside)
+        messengerShareButton.addTarget(self, action: #selector(messengerShareAction), for: UIControl.Event.touchUpInside)
+        linkShareButton.addTarget(self, action: #selector(linkShareAction), for: UIControl.Event.touchUpInside)
     }
     
     @objc func shareUsingNameAction(){

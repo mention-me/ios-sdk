@@ -37,9 +37,9 @@ class EnrolReferrerViewController: UIViewController {
         
         self.navigationItem.title = "Your Order is Complete"
         self.view.isHidden = true
-        giveOffButton.addTarget(self, action: #selector(giveOffAction), for: UIControlEvents.touchUpInside)
-        privacyButton.addTarget(self, action: #selector(privacyAction), for: UIControlEvents.touchUpInside)
-        let attrs: [NSAttributedStringKey : Any] = [NSAttributedStringKey.underlineStyle : NSUnderlineStyle.styleSingle.rawValue, NSAttributedStringKey.foregroundColor : UIColor.lightGray]
+        giveOffButton.addTarget(self, action: #selector(giveOffAction), for: UIControl.Event.touchUpInside)
+        privacyButton.addTarget(self, action: #selector(privacyAction), for: UIControl.Event.touchUpInside)
+        let attrs: [NSAttributedString.Key : Any] = [NSAttributedString.Key.underlineStyle : NSUnderlineStyle.single.rawValue, NSAttributedString.Key.foregroundColor : UIColor.lightGray]
         let attributeString = NSMutableAttributedString(string: "More info and your privacy rights", attributes: attrs)
         privacyButton.setAttributedTitle(attributeString, for: .normal)
         
@@ -119,7 +119,7 @@ class EnrolReferrerViewController: UIViewController {
             self.privacyTermsString = urlString
         }
         
-        self.giveOffButton.setTitle("INVITE A FRIEND", for: UIControlState.normal)
+        self.giveOffButton.setTitle("INVITE A FRIEND", for: UIControl.State.normal)
     }
     
     @objc func privacyAction(){

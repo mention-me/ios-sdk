@@ -30,10 +30,10 @@ class FindReferrerResultsViewController: UIViewController {
     
     func configureUI(){
         
-        getOffButton.addTarget(self, action: #selector(getOffAction), for: UIControlEvents.touchUpInside)
+        getOffButton.addTarget(self, action: #selector(getOffAction), for: UIControl.Event.touchUpInside)
         
         if let summary = referrer?.offer?.refereeReward?.summary{
-            getOffButton.setTitle("GET \(summary)", for: UIControlState.normal)
+            getOffButton.setTitle("GET \(summary)", for: UIControl.State.normal)
             label1.text = "Great, you'll get \(summary) thanks to \(firstname)"
             label2.text = "Congratulations! Because \(firstname) referred you, you've got our BEST introductory offer... Simply enter your email address to get your voucher."
         }

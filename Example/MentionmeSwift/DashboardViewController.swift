@@ -39,7 +39,7 @@ class DashboardViewController: UIViewController, MFMailComposeViewControllerDele
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.estimatedRowHeight = 100
-        self.tableView.rowHeight = UITableViewAutomaticDimension
+        self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.register(UINib(nibName: "IntroductionTableViewCell", bundle: nil), forCellReuseIdentifier: "introductionCell")
         self.tableView.register(UINib(nibName: "StatsTableViewCell", bundle: nil), forCellReuseIdentifier: "statsCell")
         self.tableView.register(UINib(nibName: "SharePanelTableViewCell", bundle: nil), forCellReuseIdentifier: "sharePanelCell")
@@ -87,13 +87,13 @@ class DashboardViewController: UIViewController, MFMailComposeViewControllerDele
         let message = "\(shareLinks.first?.defaultShareMessage ?? "") \n \(shareLinks.first?.url ?? "")"
         
         let activity = UIActivityViewController(activityItems: [message], applicationActivities: nil)
-        let excludeActivities = [UIActivityType.airDrop,
-                                 UIActivityType.print,
-                                 UIActivityType.copyToPasteboard,
-                                 UIActivityType.assignToContact,
-                                 UIActivityType.addToReadingList,
-                                 UIActivityType.mail,
-                                 UIActivityType.init(rawValue: "com.apple.mobilenotes.SharingExtension")]
+        let excludeActivities = [UIActivity.ActivityType.airDrop,
+                                 UIActivity.ActivityType.print,
+                                 UIActivity.ActivityType.copyToPasteboard,
+                                 UIActivity.ActivityType.assignToContact,
+                                 UIActivity.ActivityType.addToReadingList,
+                                 UIActivity.ActivityType.mail,
+                                 UIActivity.ActivityType.init(rawValue: "com.apple.mobilenotes.SharingExtension")]
         activity.excludedActivityTypes = excludeActivities
         present(activity, animated: true, completion: nil)
         
@@ -112,8 +112,8 @@ class DashboardViewController: UIViewController, MFMailComposeViewControllerDele
             present(mail, animated: true, completion: nil)
             
         }else{
-            let alert = UIAlertController(title: "Error", message: "You need to set email settings.", preferredStyle: UIAlertControllerStyle.alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            let alert = UIAlertController(title: "Error", message: "You need to set email settings.", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
         }
     }
