@@ -60,7 +60,7 @@ class EnrolReferrerResultsViewController: UIViewController, MFMailComposeViewCon
     
     func configureUI(){
         
-        copyButton.addTarget(self, action: #selector(copyAction), for: UIControlEvents.touchUpInside)
+        copyButton.addTarget(self, action: #selector(copyAction), for: UIControl.Event.touchUpInside)
         
         label1.text = "\(firstname), simply refer one or more friends."
         if let summary = offer?.refereeReward?.summary{
@@ -160,10 +160,10 @@ class EnrolReferrerResultsViewController: UIViewController, MFMailComposeViewCon
         }
         
         descriptionLabel.text = descriptitionText
-        shareButton.setTitle(shareButtonText, for: UIControlState.normal)
+        shareButton.setTitle(shareButtonText, for: UIControl.State.normal)
         titleLabel.text = titleText
         
-        shareButton.addTarget(self, action: #selector(shareAction), for: UIControlEvents.touchUpInside)
+        shareButton.addTarget(self, action: #selector(shareAction), for: UIControl.Event.touchUpInside)
     }
     
     @objc func shareAction(){
@@ -181,21 +181,21 @@ class EnrolReferrerResultsViewController: UIViewController, MFMailComposeViewCon
                 present(mail, animated: true, completion: nil)
                 
             }else{
-                let alert = UIAlertController(title: "Error", message: "You need to set email settings.", preferredStyle: UIAlertControllerStyle.alert)
-                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                let alert = UIAlertController(title: "Error", message: "You need to set email settings.", preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
                 self.present(alert, animated: true, completion: nil)
             }
             
         }else{
             
             let activity = UIActivityViewController(activityItems: [message], applicationActivities: nil)
-            let excludeActivities = [UIActivityType.airDrop,
-                                     UIActivityType.print,
-                                     UIActivityType.copyToPasteboard,
-                                     UIActivityType.assignToContact,
-                                     UIActivityType.addToReadingList,
-                                     UIActivityType.mail,
-                                     UIActivityType.init(rawValue: "com.apple.mobilenotes.SharingExtension")]
+            let excludeActivities = [UIActivity.ActivityType.airDrop,
+                                     UIActivity.ActivityType.print,
+                                     UIActivity.ActivityType.copyToPasteboard,
+                                     UIActivity.ActivityType.assignToContact,
+                                     UIActivity.ActivityType.addToReadingList,
+                                     UIActivity.ActivityType.mail,
+                                     UIActivity.ActivityType.init(rawValue: "com.apple.mobilenotes.SharingExtension")]
             activity.excludedActivityTypes = excludeActivities
             present(activity, animated: true, completion: nil)
         }

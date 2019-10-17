@@ -32,7 +32,7 @@ class FindReferrerViewController: UIViewController{
         label1.text = "Tell us who sent you so that we can thank them."
         label2.text = "If one of your friends loves us enough to recommend us please tell us their name below."
         searchTextField.delegate = self
-        findButton.addTarget(self, action: #selector(findAction), for: UIControlEvents.touchUpInside)
+        findButton.addTarget(self, action: #selector(findAction), for: UIControl.Event.touchUpInside)
         
         searchTextField.delegate = self
         

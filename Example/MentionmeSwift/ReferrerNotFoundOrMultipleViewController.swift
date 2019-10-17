@@ -44,7 +44,7 @@ class ReferrerNotFoundOrMultipleViewController: UIViewController {
         
         nameTextField.delegate = self
         emailTextField.delegate = self
-        findButton.addTarget(self, action: #selector(findAction), for: UIControlEvents.touchUpInside)
+        findButton.addTarget(self, action: #selector(findAction), for: UIControl.Event.touchUpInside)
     }
     
     @objc func findAction(){
