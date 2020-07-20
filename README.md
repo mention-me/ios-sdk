@@ -19,6 +19,16 @@ If you're interested in becoming a client, [please contact us first](https://blo
 
 ## Installation
 
+### Swift Package Manager
+
+Swift Package Manager is a dependency manager built into Xcode.
+
+If you are using Xcode 11 or higher, go to File / Swift Packages / Add Package Dependency... and enter package repository URL https://github.com/mention-me.git, then follow the instructions.
+
+To remove the dependency, select the project and open Swift Packages (which is next to Build Settings). You can add and remove packages from this tab.
+
+### CocoaPods
+
 MentionmeSwift is available through [CocoaPods](https://cocoapods.org). To install it, simply add the following line to your Podfile:
 
 ```ruby
