@@ -19,7 +19,7 @@ If you're interested in becoming a client, [please contact us first](https://blo
 
 ## Installation
 
-### Swift Package Manager
+### Swift Package Manager
 
 Swift Package Manager is a dependency manager built into Xcode.
 
