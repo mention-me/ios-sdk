@@ -19,6 +19,17 @@ If you're interested in becoming a client, [please contact us first](https://blo
 
 ## Installation
 
+### Swift Package Manager
+
+To install **MentionmeSwift**, just add the package as a dependency in your `Package.swift` file.
+```swift
+dependencies: [
+    .package(url: "https://github.com/mention-me/ios-sdk.git", .branch("master"))
+]
+```
+
+### CocoaPods
+
 MentionmeSwift is available through [CocoaPods](https://cocoapods.org). To install it, simply add the following line to your Podfile:
 
 ```ruby
