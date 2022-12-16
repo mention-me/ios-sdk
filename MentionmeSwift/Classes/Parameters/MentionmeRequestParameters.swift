@@ -51,7 +51,11 @@ public class MentionmeRequestParameters {
      * Variation - an index (0,1,2...) specifying which of the currently running AB tests to choose (if available)
      */
     public var variation: String?
-    
+    /**
+     * Segment data about this customer, e.g. vip or employee. You can concatenate multiple segments together if you wish using hyphens.
+     */
+   public var segment: String?
+   
 //    override init() {
 //        super.init()
 //    }

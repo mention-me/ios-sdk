@@ -132,6 +132,9 @@ public class MentionmeRequest: NSObject {
         if let variation = mentionmeRequestParameters.variation{
             requestParams["variation"] = variation
         }
+        if let segment = mentionmeRequestParameters.segment{
+            requestParams["segment"] = segment
+        }
         
         return requestParams
     }
