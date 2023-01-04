@@ -1,13 +1,13 @@
 PODS:
   - CryptoSwift (0.14.0)
-  - MentionmeSwift (1.0)
+  - MentionmeSwift (1.3)
 
 DEPENDENCIES:
   - CryptoSwift
   - MentionmeSwift (from `../`)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - CryptoSwift
 
 EXTERNAL SOURCES:
@@ -16,8 +16,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   CryptoSwift: 35a10419f4dbf0619c13f8c1c180037e115323fa
-  MentionmeSwift: dfa343d6b4fcf1dc5d31d558d334775f10d97934
+  MentionmeSwift: 4ef0b67c569eb22016778d35947bc2948e5998e6
 
 PODFILE CHECKSUM: de07144253d2e4cfd47475c4c1deb585884a7d84
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.11.3
