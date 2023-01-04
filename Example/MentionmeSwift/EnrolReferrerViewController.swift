@@ -21,6 +21,7 @@ class EnrolReferrerViewController: UIViewController {
     var firstname = "Logan"
     var surname = "Smith"
     var email = "logansmith813@mention-me.com"
+    var segment = "special"
     var privacyTermsString = ""
     var offer: MentionmeOffer?
     var shareLinks: [MentionmeShareLink]?
@@ -47,8 +48,13 @@ class EnrolReferrerViewController: UIViewController {
     
     func checkIfReferrerCanEnrol(){
         
+        //Creating customer parameters with email , firstname and surname
+        let parameters = MentionmeCustomerParameters(emailAddress: email, firstname: firstname, surname: surname)
+        parameters.segment = segment
+        
+            
         //Check if the enrollment can even happen before trying to enrol the referrer
-        Mentionme.shared.entryPointForReferrerEnrollment(mentionmeReferrerEnrollmentRequest: MentionmeReferrerEnrollmentRequest(), situation: "app-check-enrol-referrer", success: { (url, defaultCallToActionString) in
+        Mentionme.shared.entryPointForReferrerEnrollment(mentionmeReferrerEnrollmentRequest: MentionmeReferrerEnrollmentRequest(mentionmeCustomerParameters: parameters), situation: "app-check-enrol-referrer", success: { (url, defaultCallToActionString) in
             
             //if success then enrol referrer
             self.enrolReferrer()
@@ -70,6 +76,8 @@ class EnrolReferrerViewController: UIViewController {
         
         //Creating customer parameters with email , firstname and surname
         let parameters = MentionmeCustomerParameters(emailAddress: email, firstname: firstname, surname: surname)
+        parameters.segment = segment
+
         //Creating the customer request needed for the referrer enrolment.
         let request = MentionmeCustomerRequest(mentionmeCustomerParameters: parameters)
         

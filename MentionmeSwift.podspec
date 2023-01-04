@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MentionmeSwift'
-  s.version          = '1.2'
+  s.version          = '1.3'
   s.summary          = 'Supercharge your customer growth with referral marketing through Mention Me'
 
 # This description is used to generate tags and improve search results.
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.author           = { 'mention-me' => 'appledeveloper@mention-me.com' }
   s.source           = { :git => 'https://github.com/mention-me/ios-sdk.git', :tag => s.version.to_s }
   
-  s.ios.deployment_target = '9.3'
+  s.ios.deployment_target = '11.0'
   s.swift_version = '5.0'
   s.source_files = 'MentionmeSwift/Classes/**/*'
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '5.0' }
