@@ -10,32 +10,31 @@ import UIKit
 
 public class MentionmeReferralStats {
 
-    /**
+  /**
      * Number of successful referrals
      */
-    public var successfulReferrals: Int?
-    /**
+  public var successfulReferrals: Int?
+  /**
      * Number of invitations made
      */
-    public var invitations: Int?
-    /**
+  public var invitations: Int?
+  /**
      * Number of clicks on invites
      */
-    public var clicksOnInvites: Int?
-    
-    init(withDictionary dict: NSDictionary) {
-        
-        if let successfulReferrals = dict["successfulReferrals"] as? Int{
-            self.successfulReferrals = successfulReferrals
-        }
-        if let invitations = dict["invitations"] as? Int{
-            self.invitations = invitations
-        }
-        if let clicksOnInvites = dict["clicksOnInvites"] as? Int{
-            self.clicksOnInvites = clicksOnInvites
-        }
-        
+  public var clicksOnInvites: Int?
+
+  init(withDictionary dict: NSDictionary) {
+
+    if let successfulReferrals = dict["successfulReferrals"] as? Int {
+      self.successfulReferrals = successfulReferrals
     }
-    
-    
+    if let invitations = dict["invitations"] as? Int {
+      self.invitations = invitations
+    }
+    if let clicksOnInvites = dict["clicksOnInvites"] as? Int {
+      self.clicksOnInvites = clicksOnInvites
+    }
+
+  }
+
 }

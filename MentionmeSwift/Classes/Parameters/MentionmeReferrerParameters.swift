@@ -8,26 +8,26 @@
 
 import Foundation
 
-public class MentionmeReferrerParameters{
-    
-    /**
+public class MentionmeReferrerParameters {
+
+  /**
      * Id representing the referrer returned by a successful name search
      */
-    public var referrerMentionMeIdentifier: String = ""
-    /**
+  public var referrerMentionMeIdentifier: String = ""
+  /**
      * Token representing the referrer returned by a successful name search
      */
-    public var referrerToken: String = ""
-    
-    private init() {
-        
-    }
-    
-    public convenience init(referrerMentionMeIdentifier: String, referrerToken: String) {
-        self.init()
-        
-        self.referrerMentionMeIdentifier = referrerMentionMeIdentifier
-        self.referrerToken = referrerToken
-    }
-    
+  public var referrerToken: String = ""
+
+  private init() {
+
+  }
+
+  public convenience init(referrerMentionMeIdentifier: String, referrerToken: String) {
+    self.init()
+
+    self.referrerMentionMeIdentifier = referrerMentionMeIdentifier
+    self.referrerToken = referrerToken
+  }
+
 }

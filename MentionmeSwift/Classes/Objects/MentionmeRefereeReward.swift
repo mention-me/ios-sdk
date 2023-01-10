@@ -8,40 +8,40 @@
 
 import Foundation
 
-public class MentionmeRefereeReward{
-    
-    /**
+public class MentionmeRefereeReward {
+
+  /**
      * Description of the reward
      */
-    public var descriptionRefereeReward: String = ""
-    /**
+  public var descriptionRefereeReward: String = ""
+  /**
      * Reward coupon code
      */
-    public var couponCode: String = ""
-    /**
+  public var couponCode: String = ""
+  /**
      * Reward security code (if appropriate)
      */
-    public var securityCode: String = ""
-    /**
+  public var securityCode: String = ""
+  /**
      * The reward amount
      */
-    public var amount: String = ""
-    
-    init(withDictionary dict: NSDictionary) {
-        
-        if let descriptionRefereeReward = dict["description"] as? String{
-            self.descriptionRefereeReward = descriptionRefereeReward
-        }
-        if let couponCode = dict["couponCode"] as? String{
-            self.couponCode = couponCode
-        }
-        if let securityCode = dict["securityCode"] as? String{
-            self.securityCode = securityCode
-        }
-        if let amount = dict["amount"] as? String{
-            self.amount = amount
-        }
-        
+  public var amount: String = ""
+
+  init(withDictionary dict: NSDictionary) {
+
+    if let descriptionRefereeReward = dict["description"] as? String {
+      self.descriptionRefereeReward = descriptionRefereeReward
     }
-    
+    if let couponCode = dict["couponCode"] as? String {
+      self.couponCode = couponCode
+    }
+    if let securityCode = dict["securityCode"] as? String {
+      self.securityCode = securityCode
+    }
+    if let amount = dict["amount"] as? String {
+      self.amount = amount
+    }
+
+  }
+
 }

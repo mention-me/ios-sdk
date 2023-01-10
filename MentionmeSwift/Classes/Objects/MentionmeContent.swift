@@ -8,26 +8,26 @@
 
 import Foundation
 
-public class MentionmeContent{
-    
-    /**
+public class MentionmeContent {
+
+  /**
      * Token
      */
-    public var token: String = ""
-    /**
+  public var token: String = ""
+  /**
      * The headline
      */
-    public var headline: String = ""
-    
-    init(withDictionary dict: NSDictionary) {
-        
-        if let token = dict["token"] as? String{
-            self.token = token
-        }
-        if let headline = dict["headline"] as? String{
-            self.headline = headline
-        }
-        
+  public var headline: String = ""
+
+  init(withDictionary dict: NSDictionary) {
+
+    if let token = dict["token"] as? String {
+      self.token = token
     }
-    
+    if let headline = dict["headline"] as? String {
+      self.headline = headline
+    }
+
+  }
+
 }

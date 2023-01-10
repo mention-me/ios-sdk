@@ -8,24 +8,24 @@
 
 import Foundation
 
-public class MentionmeDashboardParameters{
-    
-    /**
+public class MentionmeDashboardParameters {
+
+  /**
      * REQUIRED - Email address of the referrer whose dashboard you require
      */
-    public var emailAddress: String = ""
-    /**
+  public var emailAddress: String = ""
+  /**
      * Customer Id - your unique identifier for this customer
      */
-    public var uniqueCustomerIdentifier: String?
-    
-    private init() {
-        
-    }
-    
-    public convenience init(emailAddress: String) {
-        self.init()
-        
-        self.emailAddress = emailAddress
-    }
+  public var uniqueCustomerIdentifier: String?
+
+  private init() {
+
+  }
+
+  public convenience init(emailAddress: String) {
+    self.init()
+
+    self.emailAddress = emailAddress
+  }
 }
