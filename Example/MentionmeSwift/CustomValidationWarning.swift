@@ -6,19 +6,19 @@
 //  Copyright © 2019 Mention-me. All rights reserved.
 //
 
-import UIKit
 import MentionmeSwift
+import UIKit
 
 class CustomValidationWarning: MentionmeValidationWarning {
 
-    override init() {
-        super.init()
-    }
-    
-    override func reportWarning(_ warning: String) {
-        super.reportWarning(warning)
-        
-        //Here you can include you own analytics
-    }
-    
+  override init() {
+    super.init()
+  }
+
+  override func reportWarning(_ warning: String) {
+    super.reportWarning(warning)
+
+    //Here you can include you own analytics
+  }
+
 }

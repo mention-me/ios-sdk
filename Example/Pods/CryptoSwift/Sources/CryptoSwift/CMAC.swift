@@ -14,7 +14,7 @@
 //
 
 public final class CMAC: CBCMAC {
-    override func process(lastBlock: ArraySlice<UInt8>, with x: [UInt8]) -> [UInt8] {
-        return xor(lastBlock, x)
-    }
+  override func process(lastBlock: ArraySlice<UInt8>, with x: [UInt8]) -> [UInt8] {
+    return xor(lastBlock, x)
+  }
 }

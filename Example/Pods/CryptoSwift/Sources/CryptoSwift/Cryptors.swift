@@ -14,31 +14,31 @@
 //
 
 #if canImport(Darwin)
-import Darwin
+  import Darwin
 #else
-import Glibc
+  import Glibc
 #endif
 
 /// Worker cryptor/decryptor of `Updatable` types
 public protocol Cryptors: class {
 
-    /// Cryptor suitable for encryption
-    func makeEncryptor() throws -> Cryptor & Updatable
+  /// Cryptor suitable for encryption
+  func makeEncryptor() throws -> Cryptor & Updatable
 
-    /// Cryptor suitable for decryption
-    func makeDecryptor() throws -> Cryptor & Updatable
+  /// Cryptor suitable for decryption
+  func makeDecryptor() throws -> Cryptor & Updatable
 
-    /// Generate array of random bytes. Helper function.
-    static func randomIV(_ blockSize: Int) -> Array<UInt8>
+  /// Generate array of random bytes. Helper function.
+  static func randomIV(_ blockSize: Int) -> [UInt8]
 }
 
 extension Cryptors {
-    public static func randomIV(_ blockSize: Int) -> Array<UInt8> {
-        var randomIV: Array<UInt8> = Array<UInt8>()
-        randomIV.reserveCapacity(blockSize)
-        for randomByte in RandomBytesSequence(size: blockSize) {
-            randomIV.append(randomByte)
-        }
-        return randomIV
+  public static func randomIV(_ blockSize: Int) -> [UInt8] {
+    var randomIV: [UInt8] = [UInt8]()
+    randomIV.reserveCapacity(blockSize)
+    for randomByte in RandomBytesSequence(size: blockSize) {
+      randomIV.append(randomByte)
     }
+    return randomIV
+  }
 }
