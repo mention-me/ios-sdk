@@ -8,68 +8,70 @@
 
 import Foundation
 
-public class MentionmeRefereeRegisterRequest: MentionmeRequest{
-    
-    public var mentionmeReferrerParameters: MentionmeReferrerParameters?
-    public var mentionmeCustomerParameters: MentionmeCustomerParameters?
-    
-    override init() {
-        super.init()
+public class MentionmeRefereeRegisterRequest: MentionmeRequest {
+
+  public var mentionmeReferrerParameters: MentionmeReferrerParameters?
+  public var mentionmeCustomerParameters: MentionmeCustomerParameters?
+
+  override init() {
+    super.init()
+  }
+
+  public convenience init(
+    mentionmeReferrerParameters: MentionmeReferrerParameters,
+    mentionmeCustomerParameters: MentionmeCustomerParameters
+  ) {
+    self.init()
+
+    super.method = MethodType.post
+    super.urlSuffix = "referee/register"
+    super.urlEndpoint = "consumer"
+
+    self.mentionmeReferrerParameters = mentionmeReferrerParameters
+    self.mentionmeCustomerParameters = mentionmeCustomerParameters
+
+  }
+
+  func createBodyParameters() {
+    var params: [String: Any] = [String: Any]()
+
+    if let mentionmeReferrerParameters = mentionmeReferrerParameters,
+      let mentionmeCustomerParameters = mentionmeCustomerParameters
+    {
+
+      params["referrerMentionMeIdentifier"] =
+        mentionmeReferrerParameters.referrerMentionMeIdentifier
+      params["referrerToken"] = mentionmeReferrerParameters.referrerToken
+
+      var customerParams: [String: Any] = [String: Any]()
+
+      customerParams["emailAddress"] = mentionmeCustomerParameters.emailAddress
+      customerParams["firstname"] = mentionmeCustomerParameters.firstname
+      customerParams["surname"] = mentionmeCustomerParameters.surname
+      if let title = mentionmeCustomerParameters.title {
+        customerParams["title"] = title
+      }
+      if let uniqueIdentifier = mentionmeCustomerParameters.uniqueIdentifier {
+        customerParams["uniqueIdentifier"] = uniqueIdentifier
+      }
+      if let segment = mentionmeCustomerParameters.segment {
+        customerParams["segment"] = segment
+      }
+
+      params["customer"] = customerParams
+
     }
-    
-    public convenience init(mentionmeReferrerParameters: MentionmeReferrerParameters,
-                            mentionmeCustomerParameters: MentionmeCustomerParameters){
-        self.init()
-        
-        super.method = MethodType.post
-        super.urlSuffix = "referee/register"
-        super.urlEndpoint = "consumer"
-        
-        self.mentionmeReferrerParameters = mentionmeReferrerParameters
-        self.mentionmeCustomerParameters = mentionmeCustomerParameters
-        
-    }
-    
-    func createBodyParameters(){
-        var params: [String: Any] = [String: Any]()
-        
-        if let mentionmeReferrerParameters = mentionmeReferrerParameters,
-            let mentionmeCustomerParameters = mentionmeCustomerParameters{
-            
-            
-            params["referrerMentionMeIdentifier"] = mentionmeReferrerParameters.referrerMentionMeIdentifier
-            params["referrerToken"] = mentionmeReferrerParameters.referrerToken
-            
-            
-            var customerParams: [String: Any] = [String: Any]()
-            
-            customerParams["emailAddress"] = mentionmeCustomerParameters.emailAddress
-            customerParams["firstname"] = mentionmeCustomerParameters.firstname
-            customerParams["surname"] = mentionmeCustomerParameters.surname
-            if let title = mentionmeCustomerParameters.title{
-                customerParams["title"] = title
-            }
-            if let uniqueIdentifier = mentionmeCustomerParameters.uniqueIdentifier{
-                customerParams["uniqueIdentifier"] = uniqueIdentifier
-            }
-            if let segment = mentionmeCustomerParameters.segment{
-                customerParams["segment"] = segment
-            }
-            
-            params["customer"] = customerParams
-            
-            
-        }
-        
-        bodyParameters = params
-        
-    }
-    
-    override func createRequest(requestParameters: MentionmeRequestParameters) -> NSMutableURLRequest {
-        
-        createBodyParameters()
-        
-        return super.createRequest(requestParameters: requestParameters)
-    }
-    
+
+    bodyParameters = params
+
+  }
+
+  override func createRequest(requestParameters: MentionmeRequestParameters) -> NSMutableURLRequest
+  {
+
+    createBodyParameters()
+
+    return super.createRequest(requestParameters: requestParameters)
+  }
+
 }

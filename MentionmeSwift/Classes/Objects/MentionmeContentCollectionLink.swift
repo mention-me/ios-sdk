@@ -8,30 +8,29 @@
 
 import Foundation
 
-public class MentionmeContentCollectionLink{
-    
-    /**
+public class MentionmeContentCollectionLink {
+
+  /**
      * Relationship of the link between the two resources
      */
-    public var relationship: String = ""
-    /**
+  public var relationship: String = ""
+  /**
      * The target resource being linked
      */
-    public var resource: [MentionmeContent]?
+  public var resource: [MentionmeContent]?
 
-    init(withDictionary dict: NSDictionary) {
-        
-        if let relationship = dict["relationship"] as? String{
-            self.relationship = relationship
-        }
-        if let resourceDicts = dict["resource"] as? [NSDictionary]{
-            resource = [MentionmeContent]()
-            for resourceDict in resourceDicts{
-                resource?.append(MentionmeContent(withDictionary: resourceDict))
-            }
-        }
-        
+  init(withDictionary dict: NSDictionary) {
+
+    if let relationship = dict["relationship"] as? String {
+      self.relationship = relationship
     }
-    
-}
+    if let resourceDicts = dict["resource"] as? [NSDictionary] {
+      resource = [MentionmeContent]()
+      for resourceDict in resourceDicts {
+        resource?.append(MentionmeContent(withDictionary: resourceDict))
+      }
+    }
 
+  }
+
+}

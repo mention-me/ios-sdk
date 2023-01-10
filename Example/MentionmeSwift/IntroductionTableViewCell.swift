@@ -10,27 +10,27 @@ import UIKit
 
 class IntroductionTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var line1Label: UILabel!
-    @IBOutlet weak var line2Label: UILabel!
-    @IBOutlet weak var line3Label: UILabel!
-    
-    func configureViewCell(){
-        
-        //line1Label.text = " • "
-        //line2Label.text = " • "
-        //line3Label.text = " • "
-        
-    }
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+  @IBOutlet weak var line1Label: UILabel!
+  @IBOutlet weak var line2Label: UILabel!
+  @IBOutlet weak var line3Label: UILabel!
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+  func configureViewCell() {
 
-        // Configure the view for the selected state
-    }
-    
+    //line1Label.text = " • "
+    //line2Label.text = " • "
+    //line3Label.text = " • "
+
+  }
+
+  override func awakeFromNib() {
+    super.awakeFromNib()
+    // Initialization code
+  }
+
+  override func setSelected(_ selected: Bool, animated: Bool) {
+    super.setSelected(selected, animated: animated)
+
+    // Configure the view for the selected state
+  }
+
 }

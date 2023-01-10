@@ -9,24 +9,24 @@
 import Foundation
 
 public class MentionmeError {
-    
-    /**
+
+  /**
      * The array of errors of the response
      */
-    public var errors: NSArray?
-    /**
+  public var errors: NSArray?
+  /**
      * The status code of the response
      */
-    public var statusCode: Int?
-    
-    init(withDataDictionary dataDict: NSDictionary, statusCode: Int?){
-        
-        self.statusCode = statusCode
-        
-        if let errors = dataDict["errors"] as? NSArray{
-            self.errors = errors
-        }
-        
+  public var statusCode: Int?
+
+  init(withDataDictionary dataDict: NSDictionary, statusCode: Int?) {
+
+    self.statusCode = statusCode
+
+    if let errors = dataDict["errors"] as? NSArray {
+      self.errors = errors
     }
-    
+
+  }
+
 }
