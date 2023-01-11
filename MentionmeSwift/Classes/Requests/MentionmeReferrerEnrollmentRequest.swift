@@ -10,8 +10,13 @@ import Foundation
 
 public class MentionmeReferrerEnrollmentRequest: MentionmeRequest {
 
-  public override init() {
+  override init() {
     super.init()
+  }
+
+  public convenience init(mentionmeCustomerParameters: MentionmeCustomerParameters) {
+
+    self.init()
 
     super.method = MethodType.post
     super.urlSuffix = "referrer"
