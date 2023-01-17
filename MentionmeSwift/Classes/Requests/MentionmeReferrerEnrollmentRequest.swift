@@ -8,30 +8,14 @@
 
 import Foundation
 
-public class MentionmeReferrerEnrollmentRequest: MentionmeRequest {
-
-  override init() {
-    super.init()
-  }
+public class MentionmeReferrerEnrollmentRequest: MentionmeCustomerRequest {
 
   public convenience init(mentionmeCustomerParameters: MentionmeCustomerParameters) {
-
     self.init()
-
+      
     super.method = MethodType.post
     super.urlSuffix = "referrer"
     super.urlEndpoint = "entry-point"
-
+    super.mentionmeCustomerParameters = mentionmeCustomerParameters
   }
-
-  func createBodyParameters() {
-    bodyParameters = [String: Any]()
-  }
-
-  override func createRequest(requestParameters: MentionmeRequestParameters) -> NSMutableURLRequest
-  {
-    createBodyParameters()
-    return super.createRequest(requestParameters: requestParameters)
-  }
-
 }
