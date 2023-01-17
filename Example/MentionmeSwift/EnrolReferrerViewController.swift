@@ -57,9 +57,11 @@ class EnrolReferrerViewController: UIViewController {
       emailAddress: email, firstname: firstname, surname: surname)
     parameters.segment = segment
 
+    let request = MentionmeReferrerEnrollmentRequest(mentionmeCustomerParameters: parameters)
+
     //Check if the enrollment can even happen before trying to enrol the referrer
     Mentionme.shared.entryPointForReferrerEnrollment(
-      mentionmeReferrerEnrollmentRequest: MentionmeReferrerEnrollmentRequest(mentionmeCustomerParameters: parameters),
+      mentionmeReferrerEnrollmentRequest: request,
       situation: "app-check-enrol-referrer",
       success: { (url, defaultCallToActionString) in
 
