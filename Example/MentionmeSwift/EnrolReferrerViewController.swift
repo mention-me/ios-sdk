@@ -148,7 +148,7 @@ class EnrolReferrerViewController: UIViewController {
 
   @objc func privacyAction() {
     if let url = URL(string: privacyTermsString) {
-      UIApplication.shared.openURL(url)
+        UIApplication.shared.open(url)
     }
   }
 
