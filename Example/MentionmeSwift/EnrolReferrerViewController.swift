@@ -31,7 +31,12 @@ class EnrolReferrerViewController: UIViewController {
 
     configureUI()
 
-    checkIfReferrerCanEnrol()
+    // There are two APIs you can use. The EntryPoint is the easiest to get started with - it returns a URL
+    // to render the Mention Me journey.
+    // You don't need to call this if you're using the Consumer API. We've left it in as a demo!
+    callEntryPointApiEnrollment()
+    // Alternatively, the Consumer API gives you the building blocks to assemble your own UI.
+    callConsumerApiEnrollment()
   }
 
   func configureUI() {
@@ -52,19 +57,22 @@ class EnrolReferrerViewController: UIViewController {
 
   }
 
-  func checkIfReferrerCanEnrol() {
+  func callEntryPointApiEnrollment() {
     let parameters = MentionmeCustomerParameters(
       emailAddress: email, firstname: firstname, surname: surname)
     parameters.segment = segment
 
+    let request = MentionmeReferrerEnrollmentRequest(mentionmeCustomerParameters: parameters)
+
     //Check if the enrollment can even happen before trying to enrol the referrer
     Mentionme.shared.entryPointForReferrerEnrollment(
-      mentionmeReferrerEnrollmentRequest: MentionmeReferrerEnrollmentRequest(mentionmeCustomerParameters: parameters),
+      mentionmeReferrerEnrollmentRequest: request,
       situation: "app-check-enrol-referrer",
       success: { (url, defaultCallToActionString) in
 
-        //if success then enrol referrer
-        self.enrolReferrer()
+        // If successful, you can now use the URL and the Call to Action in your UI.
+        print(url)
+        print(defaultCallToActionString)
 
       },
       failure: { (error) in
@@ -81,7 +89,7 @@ class EnrolReferrerViewController: UIViewController {
     }
   }
 
-  func enrolReferrer() {
+  func callConsumerApiEnrollment() {
 
     //Creating customer parameters with email , firstname and surname
     let parameters = MentionmeCustomerParameters(
