@@ -241,12 +241,17 @@ public class Mentionme {
     mentionmeReferrerByNameRequest: MentionmeReferrerByNameRequest,
     situation: String,
     success: @escaping (
-      _ referrer: MentionmeReferrer?, _ foundMultipleReferrers: Bool?,
-      _ links: [MentionmeContentCollectionLink]?
+      _ referrer: MentionmeReferrer?,
+      _ foundMultipleReferrers: Bool?,
+      _ links: [MentionmeContentCollectionLink]?,
+      _ termsLinks: MentionmeTermsLinks?
     ) -> Void,
     failure: @escaping (
-      _ referrer: MentionmeReferrer?, _ foundMultipleReferrers: Bool?,
-      _ links: [MentionmeContentCollectionLink]?, _ error: MentionmeError?
+      _ referrer: MentionmeReferrer?,
+      _ foundMultipleReferrers: Bool?,
+      _ links: [MentionmeContentCollectionLink]?,
+      _ termsLinks: MentionmeTermsLinks?,
+      _ error: MentionmeError?
     ) -> Void,
     noResponse: @escaping (_ error: Error?) -> Void
   ) {
@@ -273,9 +278,9 @@ public class Mentionme {
         if let data = data {
           MentionmeParser.getReferrerByName(
             data: data,
-            success: { (referrer, foundMultipleReferrers, links) in
+            success: { (referrer, foundMultipleReferrers, links, termsLinks) in
               DispatchQueue.main.async {
-                success(referrer, foundMultipleReferrers, links)
+                success(referrer, foundMultipleReferrers, links, termsLinks)
               }
             },
             failure: { (message) in
@@ -300,9 +305,9 @@ public class Mentionme {
         if let data = data {
           MentionmeParser.getReferrerByName(
             data: data,
-            success: { (referrer, foundMultipleReferrers, links) in
+            success: { (referrer, foundMultipleReferrers, links, termsLinks) in
               DispatchQueue.main.async {
-                failure(referrer, foundMultipleReferrers, links, error)
+                failure(referrer, foundMultipleReferrers, links, termsLinks, error)
               }
             },
             failure: { (message) in
@@ -336,8 +341,11 @@ public class Mentionme {
     mentionmeRefereeRegisterRequest: MentionmeRefereeRegisterRequest,
     situation: String,
     success: @escaping (
-      _ offer: MentionmeOffer?, _ refereeReward: MentionmeRefereeReward?,
-      _ contentCollectionLink: MentionmeContentCollectionLink?, _ status: String?
+      _ offer: MentionmeOffer?,
+      _ refereeReward: MentionmeRefereeReward?,
+      _ contentCollectionLink: MentionmeContentCollectionLink?,
+      _ status: String?,
+      _ termsLinks: MentionmeTermsLinks?
     ) -> Void,
     failure: @escaping (_ error: MentionmeError?) -> Void,
     noResponse: @escaping (_ error: Error?) -> Void
@@ -365,9 +373,9 @@ public class Mentionme {
         if let data = data {
           MentionmeParser.getRefereeRegister(
             data: data,
-            success: { (offer, refereeReward, link, status) in
+            success: { (offer, refereeReward, link, status, termsLinks) in
               DispatchQueue.main.async {
-                success(offer, refereeReward, link, status)
+                success(offer, refereeReward, link, status, termsLinks)
               }
             },
             failure: { (message) in

@@ -69,16 +69,19 @@ class ReferrerNotFoundOrMultipleViewController: UIViewController {
 
     //Calling the API 4. Referrer By Name
     Mentionme.shared.findReferrerByName(
-      mentionmeReferrerByNameRequest: request, situation: "app-referee-referrer-not-found-screen",
-      success: { (referrer, multipleNamesFound, contentCollectionLinks) in
+      mentionmeReferrerByNameRequest: request,
+      situation: "app-referee-referrer-not-found-screen",
+      success: { (referrer, multipleNamesFound, contentCollectionLinks, termsLinks) in
 
         self.prepareToNavigateToResultScreen(
-          referrer: referrer, foundMultipleReferrers: multipleNamesFound,
-          links: contentCollectionLinks)
+          referrer: referrer,
+          foundMultipleReferrers: multipleNamesFound,
+          links: contentCollectionLinks
+        )
         self.navigateToReferrerByNameResultScreen()
 
       },
-      failure: { (referrer, multipleNamesFound, contentCollectionLinks, error) in
+      failure: { (referrer, multipleNamesFound, contentCollectionLinks, termsLinks, error) in
         guard let error = error else { return }
         if let errors = error.errors {
           print(errors)

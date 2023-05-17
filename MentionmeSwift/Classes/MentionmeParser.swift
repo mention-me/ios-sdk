@@ -36,7 +36,8 @@ class MentionmeParser: NSObject {
   static func getOffer(
     data: Data,
     success: @escaping (
-      _ offer: MentionmeOffer?, _ sharelinks: [MentionmeShareLink]?,
+      _ offer: MentionmeOffer?,
+      _ sharelinks: [MentionmeShareLink]?,
       _ termsLinks: MentionmeTermsLinks?
     ) -> Void, failure: @escaping (_ message: String) -> Void
   ) {
@@ -175,8 +176,10 @@ class MentionmeParser: NSObject {
   static func getReferrerByName(
     data: Data,
     success: @escaping (
-      _ referrer: MentionmeReferrer?, _ foundMultipleReferrers: Bool?,
-      _ links: [MentionmeContentCollectionLink]?
+      _ referrer: MentionmeReferrer?,
+      _ foundMultipleReferrers: Bool?,
+      _ links: [MentionmeContentCollectionLink]?,
+      _ termsLinks: MentionmeTermsLinks?
     ) -> Void, failure: @escaping (_ message: String) -> Void
   ) {
     do {
@@ -191,6 +194,7 @@ class MentionmeParser: NSObject {
         var referrer: MentionmeReferrer?
         var foundMultipleReferrers: Bool?
         var links: [MentionmeContentCollectionLink]?
+        var termsLinks: MentionmeTermsLinks?
 
         if let referrerDict = json["referrer"] as? NSDictionary {
           referrer = MentionmeReferrer(withDictionary: referrerDict)
@@ -204,8 +208,11 @@ class MentionmeParser: NSObject {
             links?.append(MentionmeContentCollectionLink(withDictionary: linkDict))
           }
         }
+        if let termsLinksDict = json["termsLinks"] as? NSDictionary {
+          termsLinks = MentionmeTermsLinks(withDictionary: termsLinksDict)
+        }
 
-        success(referrer, foundMultipleReferrers, links)
+        success(referrer, foundMultipleReferrers, links, termsLinks)
 
       }
     } catch let error {
@@ -217,8 +224,11 @@ class MentionmeParser: NSObject {
   static func getRefereeRegister(
     data: Data,
     success: @escaping (
-      _ offer: MentionmeOffer?, _ refereeReward: MentionmeRefereeReward?,
-      _ contentCollectionLink: MentionmeContentCollectionLink?, _ status: String?
+      _ offer: MentionmeOffer?,
+      _ refereeReward: MentionmeRefereeReward?,
+      _ contentCollectionLink: MentionmeContentCollectionLink?,
+      _ status: String?,
+      _ termsLinks: MentionmeTermsLinks?
     ) -> Void, failure: @escaping (_ message: String) -> Void
   ) {
     do {
@@ -234,6 +244,7 @@ class MentionmeParser: NSObject {
         var refereeReward: MentionmeRefereeReward?
         var contentCollectionLink: MentionmeContentCollectionLink?
         var status: String?
+        var termsLinks: MentionmeTermsLinks?
 
         if let offerDict = json["offer"] as? NSDictionary {
           offer = MentionmeOffer(withDictionary: offerDict)
@@ -248,8 +259,11 @@ class MentionmeParser: NSObject {
         if let statusString = json["status"] as? String {
           status = statusString
         }
+        if let termsLinksDict = json["termsLinks"] as? NSDictionary {
+          termsLinks = MentionmeTermsLinks(withDictionary: termsLinksDict)
+        }
 
-        success(offer, refereeReward, contentCollectionLink, status)
+        success(offer, refereeReward, contentCollectionLink, status, termsLinks)
       }
     } catch let error {
       failure(error.localizedDescription)

@@ -63,11 +63,15 @@ class FindReferrerResultsViewController: UIViewController {
     //Calling the API 5. Link new customer to referrer
     Mentionme.shared.linkNewCustomerToReferrer(
       mentionmeRefereeRegisterRequest: request, situation: "app-referee-register-screen",
-      success: { (offer, refereeReward, contentCollectionLink, status) in
+      success: { (offer, refereeReward, contentCollectionLink, status, termsLinks) in
 
         let dict = self.prepareToNavigateToLinkCustomerResultScreen(
-          offer: offer, refereeReward: refereeReward, contentCollectionLink: contentCollectionLink,
-          status: status, email: email)
+          offer: offer,
+          refereeReward: refereeReward,
+          contentCollectionLink: contentCollectionLink,
+          status: status,
+          email: email
+        )
         self.performSegue(withIdentifier: "linkCustomerSegue", sender: dict)
 
       },
